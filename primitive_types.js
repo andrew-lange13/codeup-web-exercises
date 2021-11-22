@@ -1,13 +1,13 @@
 console.log(typeof 99.9);
 
-console.log("false");
+console.log(typeof "false");
 
-console.log(false);
+console.log(typeof false);
 
-console.log("0");
+console.log(typeof "0");
 
-console.log(0);
+console.log(typeof 0);
 
-console.log(true);
+console.log(typeof true);
 
-console.log('true');
+console.log(typeof 'true');
