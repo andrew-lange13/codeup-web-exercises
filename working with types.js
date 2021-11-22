@@ -76,3 +76,21 @@ console.log(!true,
 
 !!"0");
 
+//    Exercise 2
+
+var sample = "Hello Codeup";
+
+console.log(sample.length);
+console.log(sample.toUpperCase());
+sample = sample + " Students";
+console.log(sample);
+sample = sample.replace("Students", "Class");
+console.log(sample);
+console.log(sample.indexOf("c"));
+console.log(sample.indexOf("C"));
+console.log(sample.substring(6, 12));
+
+
+
+
+
