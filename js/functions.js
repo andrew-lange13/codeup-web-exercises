@@ -105,10 +105,8 @@ alert("you should tip $" + (billAmt * tipPercentage));
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
-function applyDiscount(x, y) {
-    var fullPrice = x;
-    var discountPercentage = y;
-    return (x * (1-y));
+function applyDiscount(fullPrice, discountPercentage) {
+    return (fullPrice * (1-discountPercentage));
 };
 
 console.log(applyDiscount(50, .2));
