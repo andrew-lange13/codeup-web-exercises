@@ -4,7 +4,7 @@ var a = 1;
 var b = a++;
 var c = ++a;
 
-console .log(a, b, c);
+console.log(a, b, c);
 
 var d = "hello";
 var e = false;
@@ -14,7 +14,7 @@ console.log(e++);
 
 var perplexed;
 
-console.log(perplexed+2);
+console.log(perplexed + 2);
 
 var price = 2.7;
 console.log(price.toFixed(2));
@@ -24,59 +24,59 @@ var price = "2.7";
 
 console.log(isNaN(0),
 
-isNaN(1),
+    isNaN(1),
 
-isNaN(""),
+    isNaN(""),
 
-isNaN("string"),
+    isNaN("string"),
 
-isNaN("0"),
+    isNaN("0"),
 
-isNaN("1"),
+    isNaN("1"),
 
-isNaN("3.145"),
+    isNaN("3.145"),
 
-isNaN(Number.MAX_VALUE),
+    isNaN(Number.MAX_VALUE),
 
-isNaN(Infinity),
+    isNaN(Infinity),
 
-isNaN("true"),
+    isNaN("true"),
 
-isNaN(true),
+    isNaN(true),
 
-isNaN("false"),
+    isNaN("false"),
 
-isNaN(false));
+    isNaN(false));
 
 console.log(NaN == NaN);
 
 console.log(!true,
 
-!false,
+    !false,
 
-!!true,
+    !!true,
 
-!!false,
+    !!false,
 
-!!0,
+    !!0,
 
-!!-0,
+    !!-0,
 
-!!1,
+    !!1,
 
-!!-1,
+    !!-1,
 
-!!0.1,
+    !!0.1,
 
-!!"hello",
+    !!"hello",
 
-!!"",
+    !!"",
 
-!!'',
+    !!'',
 
-!!"false",
+    !!"false",
 
-!!"0");
+    !!"0");
 
 //    Exercise 2
 
@@ -97,33 +97,18 @@ console.log(sample.substring(6, 12));
 
 var the_little_mermaid = 3, brother_bear = 5, hercules = 1;
 
-console.log((the_little_mermaid * 3) + (brother_bear * 3) + (hercules * 3)  );
-
-
-
-
-
+console.log((the_little_mermaid * 3) + (brother_bear * 3) + (hercules * 3));
 
 
 var Google = 400, Amazon = 380, Facebook = 350;
 
-console.log((Amazon * 4) + (Google * 6) + (Facebook *10));
-
-
-
-
-
+console.log((Amazon * 4) + (Google * 6) + (Facebook * 10));
 
 
 var classSizeMax = 25, classSize = 12, existingClassTime = 9, classTime = 11,
     studentEnroll = classSize < classSizeMax && classTime !== existingClassTime;
 
-console.log(studentEnroll) ;
-
-
-
-
-
+console.log(studentEnroll);
 
 
 var items = 7, couponExpired = false, validCoupon = items > 2 && couponExpired === false;
@@ -136,9 +121,9 @@ console.log(validCoupon);
 var username = 'codeup';
 var password = 'notastrongpassword';
 
-console.log(password.length > 5);
-console.log(!password.includes('codeup'));
-console.log(username.length < 20);
+console.log(password.length >= 5);
+console.log(!password.includes(username));
+console.log(username.length <= 20);
 console.log(!username.startsWith(" "));
 console.log(!username.endsWith(" "));
 console.log(!password.startsWith(" "));
