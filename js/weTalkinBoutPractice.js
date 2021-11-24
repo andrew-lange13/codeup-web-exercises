@@ -68,7 +68,11 @@ console.log(isMultipleOfThree(-3));
 
 // - Make a function named `isMultipleOfThreeAndFive(input)`
 
+function isMultipleOfThreeAndFive(input){
+    return input % 3 === 0 && input % 5 === 0;
+}
 
+console.log(isMultipleOfThreeAndFive(15));
 
 // - Make a function named `isMultipleOf(target, n)` which checks if target is
 // evenly divisible by `n`
