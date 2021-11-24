@@ -76,10 +76,38 @@ console.log(isMultipleOfThreeAndFive(15));
 
 // - Make a function named `isMultipleOf(target, n)` which checks if target is
 // evenly divisible by `n`
+
+function isMultipleOf(target, n) {
+    return target % n === 0;
+}
+
+console.log(isMultipleOf(6, 3));
+
 // - Make a function named `isTrue(boolean)`
+
+function isTrue(boolean){
+    return boolean ? "true" : "false";
+}
+
+console.log(isTrue(1));
+
 // - Make a function named `isFalse(boolean)`
+
+function isFalse(boolean){
+    return boolean ? "true" : "false";
+}
+
+console.log(isFalse(0));
+
 // - Make a function named `isTruthy(input)`, remember that values other than true
 // will behave like true
+
+function isTruthy(input){
+    return input ? "truthy" : "falsy";
+}
+
+console.log(isTruthy(12n))
+
 // - Make a function named `isFalsy(input)`, remember that values other than false
 // behave like false
 // - Make a function named `isVowel(letter)`
