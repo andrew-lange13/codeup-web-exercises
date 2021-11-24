@@ -106,12 +106,33 @@ function isTruthy(input){
     return input ? "truthy" : "falsy";
 }
 
-console.log(isTruthy(12n))
+console.log(isTruthy({}))
 
 // - Make a function named `isFalsy(input)`, remember that values other than false
 // behave like false
+
+function isFalsy(input){
+    return input ? "truthy" : "falsy";
+}
+
+console.log(isFalsy(NaN))
+
 // - Make a function named `isVowel(letter)`
+
+function isVowel(letter){
+    return ['a', 'e', 'i', 'o', 'u'].indexOf(letter.toLowerCase()) !== -1
+}
+
+console.log(isVowel('a'))
+
 // - Make a function named `isConsonant(letter)`
+
+function isConsonant(letter){
+    return ['a', 'e', 'i', 'o', 'u'].indexOf(letter.toLowerCase()) === -1
+}
+
+console.log(isConsonant('B'));
+
 // - Make a function named `isCapital(letter)`
 // - Make a function named `isLowerCase(letter)`
 // - Make a function named `hasLowerCase(string)` that returns if a string has any
