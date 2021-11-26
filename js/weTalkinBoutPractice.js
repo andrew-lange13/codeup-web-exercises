@@ -120,18 +120,18 @@ console.log(isFalsy(NaN))
 // - Make a function named `isVowel(letter)`
 
 function isVowel(letter){
-    return ['a', 'e', 'i', 'o', 'u'].indexOf(letter.toLowerCase()) !== -1
+    return ('aeiou').indexOf(letter.toLowerCase()) !== -1
 }
 
-console.log(isVowel('a'))
+console.log(isVowel('E'))
 
 // - Make a function named `isConsonant(letter)`
 
 function isConsonant(letter){
-    return ['a', 'e', 'i', 'o', 'u'].indexOf(letter.toLowerCase()) === -1
+    return ('aeiou').indexOf(letter.toLowerCase()) === -1
 }
 
-console.log(isConsonant('B'));
+console.log(isConsonant('b'));
 
 // - Make a function named `isCapital(letter)`
 
@@ -168,9 +168,26 @@ function isSpace(letter){
 console.log(isSpace(" "));
 
 // - Make a function named `isZero(number)`
+
+function isZero(number){
+    return number === 0;
+}
+
+console.log(isZero(0));
+
 // - Make a function named `notZero(input)` that returns true if the input is not
 // zero
+
+function notZero(number){
+    return number !== 0;
+}
+
+console.log(notZero(1));
+
 // - Write a function named `lowerCase(string)`
+
+
+
 // - Write a function named `double(n)` that returns a number times two
 // - Write a function named `triple(n)` that returns a number times 3
 // - Write a function named `quadruple(n)` that returns a number times 4
