@@ -186,9 +186,16 @@ console.log(notZero(1));
 
 // - Write a function named `lowerCase(string)`
 
+function lowerCase(string){
+    return string === string.toLowerCase();
+}
 
+console.log(lowerCase("i like turtles!"));
 
 // - Write a function named `double(n)` that returns a number times two
+
+
+
 // - Write a function named `triple(n)` that returns a number times 3
 // - Write a function named `quadruple(n)` that returns a number times 4
 // - Write a function named `half(n)` that returns 1/2 of the provided input
