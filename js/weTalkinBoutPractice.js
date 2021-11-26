@@ -194,22 +194,96 @@ console.log(lowerCase("i like turtles!"));
 
 // - Write a function named `double(n)` that returns a number times two
 
+function double(n){
+    return n * 2;
+}
 
+console.log(double(2));
 
 // - Write a function named `triple(n)` that returns a number times 3
+
+function triple(n){
+    return n * 3;
+}
+
+console.log(triple(5));
+
 // - Write a function named `quadruple(n)` that returns a number times 4
+
+function quadruple(n){
+    return n * 4;
+}
+
+console.log(quadruple(1.5));
+
 // - Write a function named `half(n)` that returns 1/2 of the provided input
+
+function half(n){
+    return n / 2;
+}
+
+console.log(half(12));
+
 // - Write a function named `subtract(a, b)` that returns `a` minus `b`
+
+function subtract(a, b){
+    return a - b;
+}
+
+console.log(subtract(12, 6));
+
 // - Write a function named `multiply(a, b)` that returns the product of `a` times
 //     `b`
+
+function multiply(a, b){
+    return a * b;
+}
+
+console.log(multiply(2, 3));
+
 // - Write a function named divide(a, b) that returns `a` divided by ~b~
+
+function divide(a, b){
+    return a / b;
+}
+
+console.log(divide(12, 2));
+
 //     - Write a function named `remainder(a, b)` that returns the remainder after
 // dividing a by b
+
+function remainder(a, b) {
+    return a % b;
+}
+
+console.log(remainder(48, 7));
+
 // - Make a function named `modulo(a, b)` that returns the returns the remainder
 // after dividing a by b
+
+function modulo(a, b){
+    return a % b;
+}
+
+console.log(modulo(55, 7));
+
 // - Write a function named `cube(n)` that returns n * n * n
+
+function cube(n){
+    return Math.pow(n, 3);
+}
+
+console.log(cube(3));
+
 // - Write a function named `squareRoot(n)` that returns the square root of the
 // input
+
+function squareRoot(n){
+    return Math.sqrt(n);
+}
+
+console.log(squareRoot(36));
+
 // - Write a function named `cubeRoot(n)` that returns the cube root of the input
 // - Write a function named `invertSign(number)` that returns a negative version of
 // a postive number, a positve version of negative, and false for all else.
