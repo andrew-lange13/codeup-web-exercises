@@ -10,7 +10,7 @@ console.log(isOdd(3));
 
 // - Make a function named `isEven(number)`
 
-function isEven(num){
+function isEven(num) {
     return Math.abs(num) % 2 === 0;
 }
 
@@ -18,7 +18,7 @@ console.log(isEven(-4));
 // - Make a function named `identity(input)` that returns the input exactly as
 // provided.
 
-function identity(input){
+function identity(input) {
     return input;
 }
 
@@ -26,7 +26,7 @@ console.log(identity("I like turtles!"))
 
 // - Make a function named `isFive(input)`
 
-function isFive(input){
+function isFive(input) {
     return input === 5;
 }
 
@@ -52,7 +52,7 @@ console.log(isMultipleOfFive(195));
 
 // - Make a function named `isThree(input)`
 
-function isThree(input){
+function isThree(input) {
     return input === 3;
 }
 
@@ -60,7 +60,7 @@ console.log(isThree(3));
 
 // - Make a function named `isMultipleOfThree(input)`
 
-function isMultipleOfThree(input){
+function isMultipleOfThree(input) {
     return input % 3 === 0;
 }
 
@@ -68,7 +68,7 @@ console.log(isMultipleOfThree(-3));
 
 // - Make a function named `isMultipleOfThreeAndFive(input)`
 
-function isMultipleOfThreeAndFive(input){
+function isMultipleOfThreeAndFive(input) {
     return input % 3 === 0 && input % 5 === 0;
 }
 
@@ -85,7 +85,7 @@ console.log(isMultipleOf(6, 3));
 
 // - Make a function named `isTrue(boolean)`
 
-function isTrue(boolean){
+function isTrue(boolean) {
     return boolean ? "true" : "false";
 }
 
@@ -93,7 +93,7 @@ console.log(isTrue(1));
 
 // - Make a function named `isFalse(boolean)`
 
-function isFalse(boolean){
+function isFalse(boolean) {
     return boolean ? "true" : "false";
 }
 
@@ -102,7 +102,7 @@ console.log(isFalse(0));
 // - Make a function named `isTruthy(input)`, remember that values other than true
 // will behave like true
 
-function isTruthy(input){
+function isTruthy(input) {
     return input ? "truthy" : "falsy";
 }
 
@@ -111,7 +111,7 @@ console.log(isTruthy({}))
 // - Make a function named `isFalsy(input)`, remember that values other than false
 // behave like false
 
-function isFalsy(input){
+function isFalsy(input) {
     return input ? "truthy" : "falsy";
 }
 
@@ -119,7 +119,7 @@ console.log(isFalsy(NaN))
 
 // - Make a function named `isVowel(letter)`
 
-function isVowel(letter){
+function isVowel(letter) {
     return ('aeiou').indexOf(letter.toLowerCase()) !== -1
 }
 
@@ -127,7 +127,7 @@ console.log(isVowel('E'))
 
 // - Make a function named `isConsonant(letter)`
 
-function isConsonant(letter){
+function isConsonant(letter) {
     return ('aeiou').indexOf(letter.toLowerCase()) === -1
 }
 
@@ -135,7 +135,7 @@ console.log(isConsonant('b'));
 
 // - Make a function named `isCapital(letter)`
 
-function isCapital(letter){
+function isCapital(letter) {
     return letter === letter.toUpperCase();
 }
 
@@ -143,7 +143,7 @@ console.log(isCapital("L"))
 
 // - Make a function named `isLowerCase(letter)`
 
-function isLowerCase(letter){
+function isLowerCase(letter) {
     return letter === letter.toLowerCase();
 }
 
@@ -152,7 +152,7 @@ console.log(isLowerCase("l"))
 // - Make a function named `hasLowerCase(string)` that returns if a string has any
 // lower cased letter
 
-function hasLowerCase(string){
+function hasLowerCase(string) {
     return string !== string.toUpperCase();
 }
 
@@ -161,7 +161,7 @@ console.log(hasLowerCase("I LIKE TURTLEs!"));
 // - Make a function named `isSpace(letter)` that returns if a character is a space
 // character
 
-function isSpace(letter){
+function isSpace(letter) {
     return letter.includes(" ");
 }
 
@@ -169,7 +169,7 @@ console.log(isSpace(" "));
 
 // - Make a function named `isZero(number)`
 
-function isZero(number){
+function isZero(number) {
     return number === 0;
 }
 
@@ -178,7 +178,7 @@ console.log(isZero(0));
 // - Make a function named `notZero(input)` that returns true if the input is not
 // zero
 
-function notZero(number){
+function notZero(number) {
     return number !== 0;
 }
 
@@ -186,7 +186,7 @@ console.log(notZero(1));
 
 // - Write a function named `lowerCase(string)`
 
-function lowerCase(string){
+function lowerCase(string) {
     return string === string.toLowerCase();
 }
 
@@ -194,7 +194,7 @@ console.log(lowerCase("i like turtles!"));
 
 // - Write a function named `double(n)` that returns a number times two
 
-function double(n){
+function double(n) {
     return n * 2;
 }
 
@@ -202,7 +202,7 @@ console.log(double(2));
 
 // - Write a function named `triple(n)` that returns a number times 3
 
-function triple(n){
+function triple(n) {
     return n * 3;
 }
 
@@ -210,7 +210,7 @@ console.log(triple(5));
 
 // - Write a function named `quadruple(n)` that returns a number times 4
 
-function quadruple(n){
+function quadruple(n) {
     return n * 4;
 }
 
@@ -218,7 +218,7 @@ console.log(quadruple(1.5));
 
 // - Write a function named `half(n)` that returns 1/2 of the provided input
 
-function half(n){
+function half(n) {
     return n / 2;
 }
 
@@ -226,7 +226,7 @@ console.log(half(12));
 
 // - Write a function named `subtract(a, b)` that returns `a` minus `b`
 
-function subtract(a, b){
+function subtract(a, b) {
     return a - b;
 }
 
@@ -235,7 +235,7 @@ console.log(subtract(12, 6));
 // - Write a function named `multiply(a, b)` that returns the product of `a` times
 //     `b`
 
-function multiply(a, b){
+function multiply(a, b) {
     return a * b;
 }
 
@@ -243,7 +243,7 @@ console.log(multiply(2, 3));
 
 // - Write a function named divide(a, b) that returns `a` divided by ~b~
 
-function divide(a, b){
+function divide(a, b) {
     return a / b;
 }
 
@@ -261,7 +261,7 @@ console.log(remainder(48, 7));
 // - Make a function named `modulo(a, b)` that returns the returns the remainder
 // after dividing a by b
 
-function modulo(a, b){
+function modulo(a, b) {
     return a % b;
 }
 
@@ -269,7 +269,7 @@ console.log(modulo(55, 7));
 
 // - Write a function named `cube(n)` that returns n * n * n
 
-function cube(n){
+function cube(n) {
     return Math.pow(n, 3);
 }
 
@@ -278,15 +278,29 @@ console.log(cube(3));
 // - Write a function named `squareRoot(n)` that returns the square root of the
 // input
 
-function squareRoot(n){
+function squareRoot(n) {
     return Math.sqrt(n);
 }
 
 console.log(squareRoot(36));
 
 // - Write a function named `cubeRoot(n)` that returns the cube root of the input
+
+function cubeRoot(n) {
+    return Math.cbrt(n);
+}
+
+console.log(cubeRoot(125));
+
 // - Write a function named `invertSign(number)` that returns a negative version of
 // a postive number, a positve version of negative, and false for all else.
+
+function invertSign(number) {
+    return -Math.abs(number);
+}
+
+console.log(invertSign(6));
+
 // - Write a function named `degreesToRadians(number)`
 // - Write a function named `radiansToDegrees(number)`
 // - Make a function named `isBlank(input)` that determines if a given input is
