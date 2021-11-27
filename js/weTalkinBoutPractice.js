@@ -356,10 +356,27 @@ function areIdentical(input1, input2){
 console.log(areIdentical(6, "6"));
 
 // - Make a function named `not(input)` returns the input with a flipped boolean
+
+function not(input){
+    return input = !input;
+}
+
+console.log(not(false));
+
 // - Make a function named `notNot(input)` that the negation of the negation of the
 // input.
+
+function notNot(input){
+    return input = !!input;
+}
+
+console.log(notNot(false));
+
 // - Make a function named `and(predicate1, predicate2)` that returns the logical
 // operation of AND
+
+
+
 // - Make a function named `or(predicate1, predicate2)` that returns the logical
 // operation of OR
 // - Write a function called `reverseString(string)` that reverses a string
