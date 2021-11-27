@@ -295,6 +295,7 @@ console.log(cubeRoot(125));
 // - Write a function named `invertSign(number)` that returns a negative version of
 // a postive number, a positve version of negative, and false for all else.
 
+// NEEDS HELP //
 function invertSign(number) {
     return -Math.abs(number);
 }
@@ -320,6 +321,7 @@ console.log(radiansToDegrees(1));
 // - Make a function named `isBlank(input)` that determines if a given input is
 // spaces, newline characters, or tabs.
 
+// NEEDS HELP  ///
 function isBlank(input){
     return input === " ";
 }
@@ -337,8 +339,22 @@ console.log(trim("  I like turtles!!   "));
 
 // - Make a function named `areEqual(input1, input2)` that returns if both inputs
 // have the same value
+
+function areEqual(input1, input2){
+    return input1 == input2;
+}
+
+console.log(areEqual(6, "6"));
+
 // - Make a function named `areIdentical(input1, input2)` that returns if both
 //     inputs are same value and data type.
+
+function areIdentical(input1, input2){
+    return input1 === input2;
+}
+
+console.log(areIdentical(6, "6"));
+
 // - Make a function named `not(input)` returns the input with a flipped boolean
 // - Make a function named `notNot(input)` that the negation of the negation of the
 // input.
