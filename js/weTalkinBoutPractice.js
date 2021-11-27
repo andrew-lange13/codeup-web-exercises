@@ -302,7 +302,17 @@ function invertSign(number) {
 console.log(invertSign(6));
 
 // - Write a function named `degreesToRadians(number)`
+
+function degreesToRadians(number){
+    return number * (Math.PI / 180);
+}
+
+console.log(degreesToRadians(1));
+
 // - Write a function named `radiansToDegrees(number)`
+
+
+
 // - Make a function named `isBlank(input)` that determines if a given input is
 // spaces, newline characters, or tabs.
 // - Make a function named `trim(string)` that removes empty spaces before and
