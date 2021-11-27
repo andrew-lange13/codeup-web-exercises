@@ -311,12 +311,30 @@ console.log(degreesToRadians(1));
 
 // - Write a function named `radiansToDegrees(number)`
 
+function radiansToDegrees(number){
+    return number * (180 / Math.PI);
+}
 
+console.log(radiansToDegrees(1));
 
 // - Make a function named `isBlank(input)` that determines if a given input is
 // spaces, newline characters, or tabs.
+
+function isBlank(input){
+    return input === " ";
+}
+
+console.log(isBlank(" "))
+
 // - Make a function named `trim(string)` that removes empty spaces before and
 // after the input.
+
+function trim(string){
+    return string.trim();
+}
+
+console.log(trim("  I like turtles!!   "));
+
 // - Make a function named `areEqual(input1, input2)` that returns if both inputs
 // have the same value
 // - Make a function named `areIdentical(input1, input2)` that returns if both
