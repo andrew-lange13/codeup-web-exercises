@@ -411,7 +411,11 @@ console.log(absoluteValue(-873));
 // the number of sides the die should have. Generate a random number between 1 up
 // to and including the number of sides.
 
+function rollDice(sides){
+    return Math.floor(Math.random() * sides);
+}
 
+console.log(rollDice(6));
 
 //
 //
