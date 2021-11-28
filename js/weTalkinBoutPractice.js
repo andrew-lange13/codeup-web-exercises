@@ -375,11 +375,29 @@ console.log(notNot(false));
 // - Make a function named `and(predicate1, predicate2)` that returns the logical
 // operation of AND
 
+function and(predicate1, predicate2){
+    return predicate1 && predicate2;
+}
 
+console.log(and("likes turtles", "hates turtles"))
 
 // - Make a function named `or(predicate1, predicate2)` that returns the logical
 // operation of OR
+
+function or(predicate1, predicate2){
+    return predicate1 || predicate2;
+}
+
+console.log(or("hates turtles", "likes turtles"));
+
 // - Write a function called `reverseString(string)` that reverses a string
+
+function reverseString(string){
+    return string.split(" ").reverse().join(" ");
+}
+
+console.log(reverseString("i like turtles"));
+
 // - Make a function named `absoluteValue(number)` that returns the absolute value
 // of a number.
 // - Make a function named `rollDice(sides)` that takes in an argument containing
