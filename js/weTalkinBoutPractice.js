@@ -400,9 +400,19 @@ console.log(reverseString("i like turtles"));
 
 // - Make a function named `absoluteValue(number)` that returns the absolute value
 // of a number.
+
+function absoluteValue(number){
+    return Math.abs(number);
+}
+
+console.log(absoluteValue(-873));
+
 // - Make a function named `rollDice(sides)` that takes in an argument containing
 // the number of sides the die should have. Generate a random number between 1 up
 // to and including the number of sides.
+
+
+
 //
 //
 //
