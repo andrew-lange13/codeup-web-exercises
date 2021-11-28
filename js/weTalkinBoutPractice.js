@@ -425,12 +425,26 @@ console.log(rollDice(6));
 // 1. Make a function called returnTwo() that returns the number 2 when called
 //
 // Test this function with `console.log(returnTwo())`
+
+function returnTwo(){
+    return 2;
+}
+
+console.log((returnTwo()));
+
 //
 //     1. Make a function called sayHowdy() which console.logs the string “Howdy!”
 //
 //    Test this function by directly calling `sayHowdy()`
 //
 // Remember this function does not need a defined return value
+
+function sayHowdy(){
+    console.log("Howdy!");
+}
+
+sayHowdy();
+
 //
 // 1. Make a function called returnName() that returns the string of your name
 //
