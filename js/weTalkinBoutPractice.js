@@ -472,11 +472,25 @@ console.log(addThree(5));
 //
 // Test this function with `console.log(sayString('codeup'))`
 //
+
+function sayString(string){
+    return string;
+}
+
+console.log(sayString('codeup'));
+
 //
 //     ## Challenge Function Drills
 //
 // - Write a function called `identity(input)` that takes in an argument called
 // input and returns that input.
+
+function identity(input){
+    return input;
+}
+
+console.log(identity(7));
+
 //
 // - Write a function called `getRandomNumber(min, max)` that returns a random
 // number between min and max values sent to that function call.
