@@ -526,10 +526,21 @@ console.log(last("I like turtles"));
 // character of a string.
 //
 
+function rest(input){
+    return input.substring(1);
+}
 
+console.log(rest("Turtles"));
 
 // - Write a function called `reverse(input)` that takes a string and returns it
 // reversed.
+
+function reverse(input){
+    return input.split(" ").reverse().join(" ");
+}
+
+console.log(reverse("I like turtles"));
+
 //
 // - Write a function called `isNumeric(input)` that takes an input and returns a
 // boolean if the input is numeric.
