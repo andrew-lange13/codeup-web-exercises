@@ -22,20 +22,20 @@
  * console.logging the function's return value
  */
 
-function analyzeColor(string){
-    if (string === "blue"){
-        console.log("blue is the color of the sky");
-    } else if (string === "red") {
-        console.log("Strawberries are red");
-    } else if (string === "cyan") {
-        console.log("I don't know anything about cyan");
-    }
-    else {
-        console.log("No data exists for this color")
-    }
-}
-
-analyzeColor("orange");
+// function analyzeColor(string){
+//     if (string === "blue"){
+//         console.log("blue is the color of the sky");
+//     } else if (string === "red") {
+//         console.log("Strawberries are red");
+//     } else if (string === "cyan") {
+//         console.log("I don't know anything about cyan");
+//     }
+//     else {
+//         console.log("No data exists for this color")
+//     }
+// }
+//
+// analyzeColor("blue");
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -50,10 +50,31 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * You should see a different message every time you refresh the page
  */
 
+// analyzeColor(randomColor);
+
+
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
+
+// let analyzeColor = "orange";
+
+// switch (analyzeColor) {
+//     case "blue":
+//         console.log("blue is the color of the sky");
+//         break;
+//     case "red":
+//         console.log("Strawberries are red");
+//         break;
+//     case "cyan":
+//         console.log("I don't know anything about cyan");
+//         break
+//     default:
+//         console.log("No data exists for this color");
+//
+// }
+
 
 /**
  * TODO:
@@ -62,6 +83,25 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * function to show it to the user.
  */
 
+// let pickAColor = prompt("Enter a color");
+//
+//
+// function analyzeColor(pickAColor){
+//     if (pickAColor === "blue"){
+//         console.log("blue is the color of the sky");
+//     } else if (pickAColor === "red") {
+//         console.log("Strawberries are red");
+//     } else if (pickAColor === "cyan") {
+//         console.log("I don't know anything about cyan");
+//     }
+//     else {
+//         console.log("No data exists for this color")
+//     }
+// }
+//
+// let colorAlert = analyzeColor(pickAColor);
+//
+// alert(colorAlert);
 /* ########################################################################## */
 
 /**
@@ -84,6 +124,25 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * return value.
  */
 
+function calculateTotal(x, y){
+    if (x === 0) {
+        return y;
+    } else if (x === 1) {
+        return (y * 0.9);
+    } else if (x === 2) {
+        return (y * 0.75);
+    } else if (x === 3) {
+        return (y * 0.65);
+    } else if (x === 4) {
+        return (y * 0.5);
+    } else if (x === 5) {
+        return (0);
+    }
+}
+
+console.log(calculateTotal(3, 500))
+
+
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -93,13 +152,20 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+var luckyNumber = Math.floor(Math.random() * 6);
 
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
  * would like to enter a number. If they click 'Ok', prompt the user for a
  * number, then use 3 separate alerts to tell the user:
+ *
+
+
+
+
+
+ *
  *
  * - whether the number is even or odd
  * - what the number plus 100 is
