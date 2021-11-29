@@ -88,20 +88,19 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
 //
 // function analyzeColor(pickAColor){
 //     if (pickAColor === "blue"){
-//         console.log("blue is the color of the sky");
+//         return("blue is the color of the sky");
 //     } else if (pickAColor === "red") {
-//         console.log("Strawberries are red");
+//         return("Strawberries are red");
 //     } else if (pickAColor === "cyan") {
-//         console.log("I don't know anything about cyan");
+//         return("I don't know anything about cyan");
 //     }
 //     else {
-//         console.log("No data exists for this color")
+//         return("No data exists for this color")
 //     }
 // }
 //
-// let colorAlert = analyzeColor(pickAColor);
 //
-// alert(colorAlert);
+// alert(analyzeColor(pickAColor));
 /* ########################################################################## */
 
 /**
@@ -124,7 +123,7 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * return value.
  */
 
-function calculateTotal(x, y){
+function calculateTotal(x, y) {
     if (x === 0) {
         return y;
     } else if (x === 1) {
@@ -160,12 +159,6 @@ var luckyNumber = Math.floor(Math.random() * 6);
  * would like to enter a number. If they click 'Ok', prompt the user for a
  * number, then use 3 separate alerts to tell the user:
  *
-
-
-
-
-
- *
  *
  * - whether the number is even or odd
  * - what the number plus 100 is
@@ -179,3 +172,22 @@ var luckyNumber = Math.floor(Math.random() * 6);
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+if (confirm("Would you like to enter a number?")) {
+    var userNumber = prompt("Enter a Number");
+}
+
+// if (userNumber % 0 === 0) {
+//     alert("Number is even")
+// } else {
+//     alert("number is odd")
+// }
+
+// alert("Your number plus 100 is " + (parseInt(userNumber) + 100));
+
+if (Math.sign(parseInt(userNumber)) === 1) {
+    alert ("Your number is positive");
+    else {
+        alert ("Your number is negative");
+    }
+}
