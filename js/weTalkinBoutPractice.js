@@ -450,9 +450,23 @@ sayHowdy();
 //
 // Test this function with `console.log(returnName())`
 //
+
+function returnName(){
+    return "Andrew";
+}
+
+console.log(returnName());
+
 //     1. Make a function called addThree() which takes in a number input and returns the number plus 3.
 //
 // Test this function with `console.log(addThree(5))`
+
+function addThree(number){
+    return number + 3;
+}
+
+console.log(addThree(5));
+
 //
 //     1. Make a function called sayString() which returns the string input passed in.
 //
