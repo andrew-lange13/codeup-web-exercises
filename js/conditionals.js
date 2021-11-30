@@ -182,13 +182,19 @@ let confirmBox = confirm("Would you like to enter a number?");
 if (confirmBox === true) {
     var userNumber = prompt("Enter your number")
 } else {
-    confirm("Bye Felicia!")
+    alert.stop()
 }
 
-if (userNumber % 2 == 0) {
-    alert("Number is even")
+if (isNaN(userNumber)) {
+    alert.stop("This not number!!!")
 } else {
-    alert("number is odd")
+    alert("Danke")
+}
+
+if (userNumber % 2) {
+    alert("Number is odd")
+} else {
+    alert("number is even")
 }
 
 alert("Your number plus 100 is " + (parseInt(userNumber) + 100));
