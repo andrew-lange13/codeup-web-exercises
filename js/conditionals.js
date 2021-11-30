@@ -173,21 +173,28 @@ var luckyNumber = Math.floor(Math.random() * 6);
  * HINT: The way we prompt for a value could be improved
  */
 
-if (confirm("Would you like to enter a number?")) {
-    var userNumber = prompt("Enter a Number");
-}
-
-// if (userNumber % 0 === 0) {
-//     alert("Number is even")
-// } else {
-//     alert("number is odd")
+// if (confirm("Would you like to enter a number?")) {
+//     var userNumber = prompt("Enter a Number");
 // }
 
-// alert("Your number plus 100 is " + (parseInt(userNumber) + 100));
+let confirmBox = confirm("Would you like to enter a number?");
+
+if (confirmBox === true) {
+    var userNumber = prompt("Enter your number")
+} else {
+    confirm("Bye Felicia!")
+}
+
+if (userNumber % 2 == 0) {
+    alert("Number is even")
+} else {
+    alert("number is odd")
+}
+
+alert("Your number plus 100 is " + (parseInt(userNumber) + 100));
 
 if (Math.sign(parseInt(userNumber)) === 1) {
-    alert ("Your number is positive");
-    else {
-        alert ("Your number is negative");
-    }
+    alert("Your number is positive")
+} else {
+    alert("Your number is negative")
 }
