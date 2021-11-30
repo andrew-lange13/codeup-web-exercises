@@ -544,12 +544,32 @@ console.log(reverse("I like turtles"));
 //
 // - Write a function called `isNumeric(input)` that takes an input and returns a
 // boolean if the input is numeric.
+
+function isNumeric(input){
+    return !isNaN(input);
+}
+
+console.log(isNumeric("a"));
+
 //
 // - Write a function called `count(input)` that takes in a string and returns the
 // number of characters.
+
+function count(input){
+    return input.length;
+}
+
+console.log(count("Turtles"));
+
 //
 // - Write a function called `add(a, b)` that returns the sum of a and b
-//
+
+function add(a, b){
+    return a + b;
+}
+
+console.log(add(7, 3))
+
 // - Write a function called `subtract(a, b)` that return the difference between
 // the two inputs.
 //
