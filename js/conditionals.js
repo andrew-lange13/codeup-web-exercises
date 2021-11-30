@@ -22,20 +22,20 @@
  * console.logging the function's return value
  */
 
-// function analyzeColor(string){
-//     if (string === "blue"){
-//         console.log("blue is the color of the sky");
-//     } else if (string === "red") {
-//         console.log("Strawberries are red");
-//     } else if (string === "cyan") {
-//         console.log("I don't know anything about cyan");
-//     }
-//     else {
-//         console.log("No data exists for this color")
-//     }
-// }
-//
-// analyzeColor("blue");
+function analyzeColor(string){
+    if (string === "blue"){
+        console.log("blue is the color of the sky");
+    } else if (string === "red") {
+        console.log("Strawberries are red");
+    } else if (string === "cyan") {
+        console.log("I don't know anything about cyan");
+    }
+    else {
+        console.log("No data exists for this color")
+    }
+}
+
+analyzeColor("blue");
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -58,22 +58,22 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
 
-// let analyzeColor = "orange";
+let analyzeColor = "orange";
 
-// switch (analyzeColor) {
-//     case "blue":
-//         console.log("blue is the color of the sky");
-//         break;
-//     case "red":
-//         console.log("Strawberries are red");
-//         break;
-//     case "cyan":
-//         console.log("I don't know anything about cyan");
-//         break
-//     default:
-//         console.log("No data exists for this color");
-//
-// }
+switch (analyzeColor) {
+    case "blue":
+        console.log("blue is the color of the sky");
+        break;
+    case "red":
+        console.log("Strawberries are red");
+        break;
+    case "cyan":
+        console.log("I don't know anything about cyan");
+        break
+    default:
+        console.log("No data exists for this color");
+
+}
 
 
 /**
@@ -83,24 +83,24 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * function to show it to the user.
  */
 
-// let pickAColor = prompt("Enter a color");
-//
-//
-// function analyzeColor(pickAColor){
-//     if (pickAColor === "blue"){
-//         return("blue is the color of the sky");
-//     } else if (pickAColor === "red") {
-//         return("Strawberries are red");
-//     } else if (pickAColor === "cyan") {
-//         return("I don't know anything about cyan");
-//     }
-//     else {
-//         return("No data exists for this color")
-//     }
-// }
-//
-//
-// alert(analyzeColor(pickAColor));
+let pickAColor = prompt("Enter a color");
+
+
+function analyzeColor(pickAColor){
+    if (pickAColor === "blue"){
+        return("blue is the color of the sky");
+    } else if (pickAColor === "red") {
+        return("Strawberries are red");
+    } else if (pickAColor === "cyan") {
+        return("I don't know anything about cyan");
+    }
+    else {
+        return("No data exists for this color")
+    }
+}
+
+
+alert(analyzeColor(pickAColor));
 /* ########################################################################## */
 
 /**
@@ -173,9 +173,7 @@ var luckyNumber = Math.floor(Math.random() * 6);
  * HINT: The way we prompt for a value could be improved
  */
 
-// if (confirm("Would you like to enter a number?")) {
-//     var userNumber = prompt("Enter a Number");
-// }
+
 
 let confirmBox = confirm("Would you like to enter a number?");
 
@@ -186,10 +184,12 @@ if (confirmBox === true) {
 }
 
 if (isNaN(userNumber)) {
-    alert.stop("This not number!!!")
+    alert("This not number!!!");
+    alert.stop()
 } else {
     alert("Danke")
 }
+
 
 if (userNumber % 2) {
     alert("Number is odd")
