@@ -26,11 +26,11 @@ console.log(identity("I like turtles!"))
 
 // - Make a function named `isFive(input)`
 
-function isFive(input) {
-    return input === 5;
-}
-
-console.log(isFive(5));
+// function isFive(input) {
+//     return input === 5;
+// }
+//
+// console.log(isFive(5));
 
 
 // - Make a function named `addFive(input)` that adds five to some input.
@@ -573,6 +573,12 @@ console.log(add(7, 3))
 // - Write a function called `subtract(a, b)` that return the difference between
 // the two inputs.
 //
+function subtract(a, b){
+    return a - b;
+}
+
+console.log(subtract(8, 5));
+
 // - Write `multiply(a, b)` function that returns the product
 //
 // - Write a `divide(numerator, denominator)` function that returns a divided by b
