@@ -17,13 +17,28 @@
 // showMultiplicationTable(7);
 
 
-for (let x = 1; x <= 10; x++) {
-    function showMultiplicationTable(n) {
-        return (n * x);
+// for (let x = 1; x <= 10; x++) {
+//     function showMultiplicationTable(n) {
+//         return (n * x);
+//     }
+//
+//     console.log(showMultiplicationTable(6))
+// }
+
+////// randomBoolean
+
+for (let i = 0; i < 10; i++) {
+    let randomNum = Math.floor((Math.random() * (201 - 20)) + 1);
+
+    function randomBoolean() {
+        if (randomNum % 2 === 0) {
+            return randomNum + " is Even"
+        } else {
+            return randomNum + " is Odd"
+        }
     }
 
-    console.log(showMultiplicationTable(6))
+    console.log(randomBoolean());
 }
 
-////// forRandomBoolean
-
+console.log(typeof true)
