@@ -25,20 +25,28 @@
 //     console.log(showMultiplicationTable(6))
 // }
 
-////// randomBoolean
+////// randomEvenOdd
 
-for (let i = 0; i < 10; i++) {
-    let randomNum = Math.floor((Math.random() * (201 - 20)) + 1);
+// for (let i = 0; i < 10; i++) {
+//     let randomNum = Math.floor((Math.random() * (201 - 20)) + 1);
+//
+//     function randomEvenOdd() {
+//         if (randomNum % 2 === 0) {
+//             return randomNum + " is Even"
+//         } else {
+//             return randomNum + " is Odd"
+//         }
+//     }
+//
+//     console.log(randomEvenOdd());
+// }
 
-    function randomBoolean() {
-        if (randomNum % 2 === 0) {
-            return randomNum + " is Even"
-        } else {
-            return randomNum + " is Odd"
-        }
-    }
+////// forWedge
+//
+// for (let i = 0; i < 10; i++) {
+//     let x = (i.toString()).repeat(i)
+//         console.log(x)
+// }
 
-    console.log(randomBoolean());
-}
 
-console.log(typeof true)
+//////
