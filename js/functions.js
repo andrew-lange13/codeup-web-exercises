@@ -88,7 +88,7 @@ let billAmt = prompt("How much was your bill?");
 
 let tipPercentage = prompt("What percentage would you like to tip? (Enter as decimal)");
 
-alert("you should tip $" + (billAmt * tipPercentage));
+alert("You should tip $" + (billAmt * tipPercentage));
 
 
 /**

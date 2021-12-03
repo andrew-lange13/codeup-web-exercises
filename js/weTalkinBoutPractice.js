@@ -580,6 +580,13 @@ function subtract(a, b){
 console.log(subtract(8, 5));
 
 // - Write `multiply(a, b)` function that returns the product
+
+function multiply(a, b) {
+    return a * b;
+}
+
+console.log(multiply(2, 8));
+
 //
 // - Write a `divide(numerator, denominator)` function that returns a divided by b
 //
