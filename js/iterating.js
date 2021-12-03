@@ -44,8 +44,8 @@
      * Refactor your above code to use a `forEach` loop
      */
 
-    names.forEach(function (name) {
-        console.log(name);
+    names.forEach(function (element) {
+        console.log(element);
     })
 
     /**
@@ -72,13 +72,14 @@
         return input[1];
     }
 
-    function third(input) {
-        return input[2];
+    function last(input) {
+        let lastIndexOfArray = input.length -1;
+        return input[lastIndexOfArray];
     }
 
     console.log(first(names))
     console.log(second(names))
-    console.log(third(names))
+    console.log(last(names))
 
 })();
 
