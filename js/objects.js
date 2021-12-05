@@ -57,11 +57,20 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    const shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+
+    function discountFunction(total, discount){
+        if (total >= 200){
+            return shoppers [0] + ", your total purchase was " + total + " before the discount of " + discount + " and your total after the discount is " + (total * (1 - discount));
+        }
+    };
+
+    console.log(discountFunction(250, .12));
+
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
