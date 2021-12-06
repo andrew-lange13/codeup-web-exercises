@@ -41,6 +41,12 @@
     //
     // console.log(person.sayHello());
 
+    // person.sayHello = function (){
+    //     return "Hello from " + this.firstName + " " + this.lastName;
+    // }
+    //
+    // console.log(person.sayHello());
+
 
 
     /** TODO:
@@ -60,16 +66,33 @@
     // const shoppers = [
     //     {name: 'Cameron', amount: 180},
     //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
-    //
-    // shoppers.foreach(function discountFunction(total, discount){
-    //     if (total >= 200){
-    //         return shoppers.name + ", your total purchase was " + total + " before the discount of " + discount + " and your total after the discount is " + (total * (1 - discount));
+    //     {name: 'George', amount: 320}]
+
+
+    // shoppers.forEach(function storeDiscount(shoppers) {
+    //     if (shoppers.amount > 200) {
+    //         console.log(shoppers.name + " your total is " + shoppers.amount + " before discount of 12%, your discounted total is " + shoppers.amount * (1 - 0.12));
+    //     } else {
+    //         console.log(shoppers.name + " you did not spend enough today for a discount.");
     //     }
-    // });
+    // })
+    //Collection              //Individual Element
+    // shoppers.forEach(function (shopper, index) {
+    //     console.log(shopper);
     //
-    // console.log(discountFunction(250, .12));
+    //     let discount = shopper.amount.toFixed(2) * 0.12
+    //     let discountedTotal = shopper.amount.toFixed(2) - discount
+    //
+    //     if (shopper.amount > 200){
+    //         console.log(`${shopper.name} gets a discount
+    //         The original price was $${shopper.amount.toFixed(2)},
+    //         The discount is $${discount}
+    //         The total due is $${discountedTotal}`);
+    //     } else{
+    //         console.log(`${shopper.name} does not get a discount
+    //         The total due is $${shopper.amount.toFixed(2)}`)
+    //     }
+    // })
 
 
     /** TODO:
@@ -85,14 +108,18 @@
      * > console.log(books[0].author.lastName) // "Adams"
      */
 
-    // const books = [
-    //     {title: "bob's book", author: {firstName:"bob", lastName: "boberson"}},
-    //     {title: "fred's book", author: {firstName: "fred", lastName:"frederson"}},
-    //     {title: "joe's book", author: {firstName: "joe", lastName:"joerson"}},
-    //     {title: "mike's book", author: {firstName: "mike", lastName:"mikerson"}},
-    //     {title: "pablo's book", author: {firstName: "pablo", lastName:"pabloerson"}}
+    // let books = [
+    //     {title: "Red War", author: {firstName:"Kyle", lastName: "Mills"}},
+    //     {title: "American Assassin", author: {firstName: "Vince", lastName:"Flynn"}},
+    //     {title: "The DaVinci Code", author: {firstName: "Dan", lastName:"Brown"}},
+    //     {title: "Harry Potter", author: {firstName: "J.K.", lastName:"Rowling"}},
+    //     {title: "The Pepperwood Chronicles", author: {firstName: "Nick", lastName:"Miller"}}
     // ]
-    //
+
+    // books.forEach(function (book) {
+    //     console.log(book)
+    // })
+
     // console.log(books[0].title);
     // console.log(books[0].author.firstName);
     // console.log(books[1].author.lastName);
@@ -122,6 +149,15 @@
      *      ...
      */
 
+    // books.forEach(function (book, index) {
+    //     console.log(`Book # ${index +1}\n${book.title}\nAuthor: ${book.author.firstName} ${book.author.lastName}\n---`)
+    // })
+
+    // books.forEach(function (book, index) {
+    //     console.log("Book # " + (index +1) +  " Title: " + book.title + " Author: " + book.author.firstName + " " + book.author.lastName)
+    // })
+
+
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
@@ -132,5 +168,9 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
+    function createBook(){
+
+    }
 
 })();

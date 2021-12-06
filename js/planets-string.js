@@ -43,4 +43,6 @@
 
     document.body.innerHTML = planetsList;
 
+    // document.body.innerHTML = planetWithBreaks;
+
 })();
