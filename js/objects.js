@@ -57,19 +57,19 @@
      * and console.log the relevant messages for each person
      */
 
-    const shoppers = [
-        {name: 'Cameron', amount: 180},
-        {name: 'Ryan', amount: 250},
-        {name: 'George', amount: 320}
-    ];
-
-    function discountFunction(total, discount){
-        if (total >= 200){
-            return shoppers [0] + ", your total purchase was " + total + " before the discount of " + discount + " and your total after the discount is " + (total * (1 - discount));
-        }
-    };
-
-    console.log(discountFunction(250, .12));
+    // const shoppers = [
+    //     {name: 'Cameron', amount: 180},
+    //     {name: 'Ryan', amount: 250},
+    //     {name: 'George', amount: 320}
+    // ];
+    //
+    // shoppers.foreach(function discountFunction(total, discount){
+    //     if (total >= 200){
+    //         return shoppers.name + ", your total purchase was " + total + " before the discount of " + discount + " and your total after the discount is " + (total * (1 - discount));
+    //     }
+    // });
+    //
+    // console.log(discountFunction(250, .12));
 
 
     /** TODO:
@@ -84,6 +84,17 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+    const books = [
+        {title: "bob's book", author: {firstName:"bob", lastName: "boberson"}},
+        {title: "fred's book", author: "fred"},
+        {title: "joe's book", author: "joe"},
+        {title: "mike's book", author: "mike"},
+        {title: "pablo's book", author: "pablo"}
+    ]
+
+    console.log(books[0].title);
+    console.log(books[0].author.firstName);
 
     /**
      * TODO:
