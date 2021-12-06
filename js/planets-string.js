@@ -1,4 +1,4 @@
-(function(){
+(function () {
     "use strict";
 
     var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
@@ -28,12 +28,19 @@
      */
 
 
-    var planetsString2 = "Mercury <br> Venus <br> Earth <br> Mars <br> Jupiter <br> Saturn <br> Uranus <br> Neptune";
+    // var planetsString2 = "Mercury <br> Venus <br> Earth <br> Mars <br> Jupiter <br> Saturn <br> Uranus <br> Neptune";
+    //
+    // console.log(planetsString2)
 
-    console.log(planetsString2)
+    const planetWithBreaks = planetsArray.join("<br>");
+    console.log(planetWithBreaks);
 
-    let htmlString = "<ul><li>Mercury</li><li>Venus</li><li>Earth</li><li>Mars</li><li>Jupiter</li><li>Saturn</li><li>Uranus</li><li>Neptune</li></ul>";
+    // let htmlString = "<ul><li>Mercury</li><li>Venus</li><li>Earth</li><li>Mars</li><li>Jupiter</li><li>Saturn</li><li>Uranus</li><li>Neptune</li></ul>";
 
-    document.body.innerHTML = htmlString;
+    let planetsList = planetsArray.join("</li><li>");
+
+    planetsList = "<ul><li>" + planetsList + "</li></ul>"
+
+    document.body.innerHTML = planetsList;
 
 })();
