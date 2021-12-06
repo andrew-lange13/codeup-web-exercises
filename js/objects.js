@@ -85,16 +85,17 @@
      * > console.log(books[0].author.lastName) // "Adams"
      */
 
-    const books = [
-        {title: "bob's book", author: {firstName:"bob", lastName: "boberson"}},
-        {title: "fred's book", author: "fred"},
-        {title: "joe's book", author: "joe"},
-        {title: "mike's book", author: "mike"},
-        {title: "pablo's book", author: "pablo"}
-    ]
-
-    console.log(books[0].title);
-    console.log(books[0].author.firstName);
+    // const books = [
+    //     {title: "bob's book", author: {firstName:"bob", lastName: "boberson"}},
+    //     {title: "fred's book", author: {firstName: "fred", lastName:"frederson"}},
+    //     {title: "joe's book", author: {firstName: "joe", lastName:"joerson"}},
+    //     {title: "mike's book", author: {firstName: "mike", lastName:"mikerson"}},
+    //     {title: "pablo's book", author: {firstName: "pablo", lastName:"pabloerson"}}
+    // ]
+    //
+    // console.log(books[0].title);
+    // console.log(books[0].author.firstName);
+    // console.log(books[1].author.lastName);
 
     /**
      * TODO:
