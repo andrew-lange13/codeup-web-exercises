@@ -169,8 +169,22 @@
      *   `showBookInfo` function.
      */
 
-    function createBook(){
-
-    }
+    // function createBook(bookTitle, authorFirstName, authorLastName){
+    //     return {
+    //         title: bookTitle,
+    //         author: {
+    //             firstName: authorFirstName,
+    //             lastName: authorLastName
+    //         },
+    //         showBookInfo: function (book, index) {
+    //             console.log(`Book # ${index +1}\n${this.title}\nAuthor: ${this.author.firstName} ${this.author.lastName}\n---`)
+    //
+    //         }
+    //     }
+    // }
+    //
+    // const newBook = createBook("I like turtles", "Cleetus", "Hemingway")
+    //
+    // newBook.showBookInfo()
 
 })();
