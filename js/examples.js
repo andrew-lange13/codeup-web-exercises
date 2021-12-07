@@ -102,18 +102,18 @@ gradeCheck(joesGrade);*/
 // }
 
 
-let joesGrade = 50;
-let bobsGrade = 66;
-let fredsGrade = 72;
-let mikesGrade = 88;
-let bobosGrade = 99;
-
-switch (true) {
-    case bobosGrade >= 90:
-        console.log("You got an A");
-        break;
-    case bobosGrade >= 80:
-        console.log("You got a B");
-        break;
-
-}
+// let joesGrade = 50;
+// let bobsGrade = 66;
+// let fredsGrade = 72;
+// let mikesGrade = 88;
+// let bobosGrade = 99;
+//
+// switch (true) {
+//     case bobosGrade >= 90:
+//         console.log("You got an A");
+//         break;
+//     case bobosGrade >= 80:
+//         console.log("You got a B");
+//         break;
+//
+// }
