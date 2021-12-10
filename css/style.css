@@ -10,6 +10,7 @@ h1, h2{
 }
 
 body {
+    /*background: url("/codeup-web-exercises/assets/peter-wormstetter-hSpnVhGT-Tg-unsplash.jpeg") lightslategray;*/
     background: url("https://picsum.photos/1000/1500") lightslategray;
     background-size: cover;
     font-family: 'Fuzzy Bubbles', cursive;
