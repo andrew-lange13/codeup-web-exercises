@@ -7,28 +7,28 @@ body, html {
 }
 
 :root{
-    --info-color:#06c;
-    --success-color:#016b01;
-    --warning-color:#7c6544;
-    --error-color:#600303;
+    --bg-info:rgba(0, 0, 255, 0.17);
+    --text-info:#06c;
+    --bg-success: rgba(0, 128, 0, 0.25);
+    --text-success:#016b01;
 }
 
 .message-info {
     margin: 8px;
     padding: 8px;
     border: solid lightgray 1px;
-    background-color: rgba(0, 0, 255, 0.17);
+    background-color: var(--bg-info);
     border-radius: 8px;
-    color: var(--info-color);
+    color: var(--text-info);
 }
 
 .message-success {
     margin: 0 8px 8px 8px;
     padding: 8px;
     border: solid lightgray 1px;
-    background-color: rgba(0, 128, 0, 0.25);
+    background-color: var(--bg-success);
     border-radius: 8px;
-    color: var(--success-color);
+    color: var(--text-success);
 }
 
 .message-warning {
@@ -37,7 +37,7 @@ body, html {
     border: solid lightgray 1px;
     background-color: rgba(255, 255, 0, 0.22);
     border-radius: 8px;
-    color: var(--warning-color);
+    color: #7c6544;
 
 }
 
@@ -47,6 +47,6 @@ body, html {
     border: solid lightgray 1px;
     background-color: rgba(255, 0, 0, 0.3);
     border-radius: 8px;
-    color: var(--error-color);
+    color: #600303;
 
 }
