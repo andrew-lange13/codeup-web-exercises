@@ -9,13 +9,12 @@ h1, h2{
     text-decoration: underline;
 }
 
-/*html {*/
-/*    background: url("/assets/mathew-schwartz-E1BvAesrLdM-unsplash.jpeg") no-repeat center center fixed;*/
-/*    -webkit-background-size: cover;*/
-/*    -moz-background-size: cover;*/
-/*    -o-background-size: cover;*/
-/*    background-size: cover;*/
-/*}*/
+body {
+    background: url("https://picsum.photos/1000/1500") lightslategray;
+    background-size: cover;
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: chartreuse;
+}
 
 ul {
     list-style: circle;
@@ -23,10 +22,6 @@ ul {
 
 ol {
     list-style: lower-latin;
-}
-
-body{
-    font-family: 'Fuzzy Bubbles', cursive;
 }
 
 table, td, tr{
