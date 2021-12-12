@@ -141,20 +141,22 @@ console.log(remainder(7, 3));*/
 // 2. Write a JavaScript function that checks whether a passed string is palindrome or not? Go to the editor
 // A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.
 
-function isPalindrome(string){
-    let checkString = string.toLowerCase().replace(/[^a-zA_Z0-9]+/g);
-    if (string === string.split("").reverse().join("")){
-        return "This is a palindrome"
-    } else{
-        return "Nope, not a palindrome"
-    }
-}
-
-console.log(isPalindrome("madam"))
+// function isPalindrome(string){
+//     let checkString = string.toLowerCase().replace(/[^a-zA_Z0-9]+/g, "");
+//     if (string === string.split("").reverse().join("")){
+//         return "This is a palindrome"
+//     } else{
+//         return "Nope, not a palindrome"
+//     }
+// }
+//
+// console.log(isPalindrome("madam"))
 
 // 3. Write a JavaScript function that generates all combinations of a string. Go to the editor
 // Example string : 'dog'
 // Expected Output : d,do,dog,o,og,g
+
+
 
 //
 // 4. Write a JavaScript function that returns a passed string with letters in alphabetical order. Go to the editor
