@@ -1,0 +1,72 @@
+.container1{
+    height: 800px;
+    width: 800px;
+    margin: 30px;
+    border: solid blue 5px;
+    background-color: orange;
+}
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    margin: 10px;
+    border: dashed red 5px;
+    float: left;
+}
+/*#text1{*/
+/*    text-align: right;*/
+/*}*/
+/*.container2{*/
+/*    height: 200px;*/
+/*    width: 600px;*/
+/*    margin: 10px;*/
+/*    border: orange solid 5px;*/
+/*    background-color: blue;*/
+/*}*/
+
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color: chartreuse;
+    margin: 10px;
+    border: dashed black 5px;
+    float: right;
+}
+/*#text2{*/
+/*    clear: both;*/
+/*    text-align: left;*/
+/*    position: relative;*/
+/*    top: 50px;*/
+/*}*/
+.box3{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    margin: 10px;
+    border: dashed chartreuse 5px;
+    /*float: left;*/
+    position: relative;
+    top: 670px;
+}
+/*#text3{*/
+/*    clear: both;*/
+/*    text-align: right;*/
+/*    position: relative;*/
+/*    top: 50px;*/
+/*}*/
+.box4{
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    margin: 10px;
+    border: dashed chartreuse 5px;
+    float: right;
+    position: relative;
+    top: 540px;
+}
+/*#text4{*/
+/*    clear: both;*/
+/*    text-align: left;*/
+/*    position: relative;*/
+/*    top: 50px;*/
+/*}*/
