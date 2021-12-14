@@ -1,0 +1,40 @@
+.navbar {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background-color: lightslategray;
+}
+
+a {
+    display: inline-block;
+    padding: 2px;
+    margin: -2px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+
+
+.navbar_left {
+    font-family: 'Work Sans', sans-serif;
+    justify-content: space-between;
+    font-size: 12px;
+    align-self: center;
+}
+
+.navbar_middle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    padding: .2em 0;
+    margin: auto
+}
+
+.navbar_right {
+    font-family: 'Work Sans', sans-serif;
+    justify-content: flex-end;
+    align-self: center;
+}
