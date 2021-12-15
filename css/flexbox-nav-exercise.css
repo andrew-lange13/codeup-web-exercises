@@ -7,8 +7,8 @@
 
 a {
     display: inline-block;
-    padding: 2px;
-    margin: -2px;
+    padding: 10px;
+    margin: -10px;
     text-decoration: none;
     color: black;
 }
@@ -65,19 +65,28 @@ body{
 .footer-main{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
 }
 .footer-main-item{
     display: flex;
     flex-direction: column;
-    align-content: space-evenly;
-    min-width: 10%;
+    align-content: space-between;
 }
-.footer-main-item > p{
+.footer-main-item:nth-of-type(4){
     max-width: 20%;
 }
 form{
     display: flex;
     flex-wrap: wrap;
+}
+.footer-links-item{
+    display: flex;
+    justify-content: space-between;
+}
+.page-links {
+    display: flex;
+    justify-content: space-between;
 }
 #email{
     border-color: whitesmoke;
