@@ -65,26 +65,71 @@
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="size-tab" data-bs-toggle="tab" data-bs-target="#size" type="button" role="tab" aria-controls="home" aria-selected="true"><span class="badge rounded-pill bg-secondary">1</span>&nbspSize and Crust</button>
+                        <button class="nav-link active" id="size-tab" data-bs-toggle="tab" data-bs-target="#size"
+                                type="button" role="tab"><span
+                                class="badge rounded-pill bg-secondary">1</span>&nbspSize and Crust
+                        </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="cheese-tab" data-bs-toggle="tab" data-bs-target="#cheese" type="button" role="tab" aria-controls="home" aria-selected="true"><span class="badge rounded-pill bg-secondary">2</span>&nbspCheese and Sauce</button>
+                        <button class="nav-link" id="cheese-tab" data-bs-toggle="tab" data-bs-target="#cheese"
+                                type="button" role="tab"><span
+                                class="badge rounded-pill bg-secondary">2</span>&nbspCheese and Sauce
+                        </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="toppings-tab" data-bs-toggle="tab" data-bs-target="#toppings" type="button" role="tab" aria-controls="home" aria-selected="true"><span class="badge rounded-pill bg-secondary">3</span>&nbspToppings</button>
+                        <button class="nav-link" id="toppings-tab" data-bs-toggle="tab" data-bs-target="#toppings"
+                                type="button" role="tab"><span
+                                class="badge rounded-pill bg-secondary">3</span>&nbspToppings
+                        </button>
                     </li>
                 </ul>
             </div>
             <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="size" role="tabpanel" aria-labelledby="home-tab">
-                    <ul class="size-group card-header">
-                        <li class="list-group-item list-group-item-primary">Choose size and crust</li>
+                <div class="tab-pane fade show active" id="size" role="tabpanel">
+                    <header class="list-group-item list-group-item-primary text-start ">Choose size and crust</header>
+                    <ul class="handTossed list-group text-start me-auto p-3">
+                        <li class="list-group-item list-group-item-secondary p-3">
+                            Hand Tossed
+                        </li>
+                        <li class="list-group-item list-group-item-light p-3">
+                            Garlic seasoned crust with a rich, buttery taste.
+                        </li>
+                        <li class="list-group-item list-group-item-light p-3">
+                            <input class="form-check-input" type="radio" name="crust1" id="crust1">
+                            <label class="form-check-label" for="crust1">
+                            Small (10")
+                        </li>
+                        <li class="list-group-item list-group-item-light p-3">
+                            <input class="form-check-input" type="radio" name="crust2" id="crust2">
+                            <label class="form-check-label" for="crust2">
+                            Medium (12")
+                        </li>
                     </ul>
+
+                    <ul class="crispyThin list-group text-start me-auto p-3">
+                        <li class="list-group-item list-group-item-secondary p-3">
+                            Crispy Thin
+                        </li>
+                        <li class="list-group-item list-group-item-light p-3">
+                            Thin enough for optimum crispy to crunchy ratio.
+                        </li>
+                        <li class="list-group-item  p-3">
+                            <input class="form-check-input" type="radio" name="crust3" id="crust3">
+                            <label class="form-check-label" for="crust3">
+                                Medium (12")
+                        </li>
+                        <li class="list-group-item list-group-item-light p-3">
+                            <input class="form-check-input" type="radio" name="crust4" id="crust4">
+                            <label class="form-check-label" for="crust4">
+                                Large (14")
+                        </li>
+                    </ul>
+                    <footer></footer>
                 </div>
-                <div class="tab-pane fade" id="cheese" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="tab-pane fade" id="cheese" role="tabpanel">
                     ...
                 </div>
-                <div class="tab-pane fade" id="toppings" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="tab-pane fade" id="toppings" role="tabpanel">
                     ...
                 </div>
             </div>
