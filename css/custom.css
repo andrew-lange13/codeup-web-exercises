@@ -1,0 +1,16 @@
+.jumbotron{
+    height: 200px;
+    min-width: 100%;
+    margin: auto;
+}
+.jumbotron h1{
+    text-align: center;
+    position: relative;
+    top: 50px;
+    font-size: 4rem;
+    color: #7c6544;
+    background: rgba(255, 255, 255, 0.7);
+}
+.builder h2{
+    padding-top: 20px;
+}
