@@ -2,14 +2,27 @@
 
 // Write a function that takes in a number and returns triple the value of the passed number. Assume only number inputs.
 
-function triple(x){
-    return(x*3)
-}
+// function triple(x){
+//     return(x*3)
+// }
+//
+// console.log(triple(3))
 
-console.log(triple(3))
 // Modify the above function to work with numeric strings as well.
 
+// function triple(x){
+//     return(parseInt(x)*3)
+// }
+//
+// console.log(triple("3"))
+
 // Modify the above function to return a string output of 'not a number' if the input is not a number or numeric string.
+
+function triple(x){
+    return(parseInt(x)*3)
+}
+
+console.log(triple("3"))
 
 // Write a function that takes in a number and string and returns the string 'matches length' if the passed number is the length of the passed string and returns 'no length match' otherwise.
 
