@@ -25,17 +25,38 @@
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
+<ul style="list-style: none">
+    <li>
+        <button id="btn1">Change Main Heading</button>
+    </li>
+    <br>
+    <li>
+        <button id="btn2">Make subHeader Blue</button>
+    </li>
+    <br>
+    <li>
+        <button id="btn3">Every Other List Item Grey</button>
+    </li>
+    <br>
+    <li>
+        <button id="btn4">First List Item Blue</button>
+    </li>
+</ul>
 <script>
-    (function() {
+    (function () {
         "use strict";
         // TODO: Uncomment next line and get the main header element by id
-        let mainHeader = document.getElementById("main-header") ;
+        let mainHeader = document.getElementById("main-header");
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        mainHeader.innerHTML = "JavaScript is Cool";
+        let headerText = function (){
+            mainHeader.innerHTML = "JavaScript is Cool";
+        }
 
         // TODO: Uncomment the next line and get the sub header element by id
-        let subHeader = document.getElementById("sub-header");
+        let subHeader = document.getElementById("sub-header")
+
+        // document.getElementById("sub-header").style.color = "blue"
 
         // TODO: Set the text color of subHeader to blue
         subHeader.style.color = "blue";
@@ -44,7 +65,7 @@
         let listItems = document.getElementsByTagName("li");
 
         // TODO: Set text color on every other list item to grey
-        for (let i = 0; i < listItems.length; i+=2) {
+        for (let i = 0; i < listItems.length; i += 2) {
             listItems[i].style.color = 'grey';
         }
         // TODO: Set text color of li with dbid = 1 to blue
@@ -55,6 +76,8 @@
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
         subParagraphs[0].textContent = "Mission Accomplished!"
+
+        document.getElementById("btn1").addEventListener("click", headerText);
 
     })();
 </script>
