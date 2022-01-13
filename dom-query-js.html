@@ -57,6 +57,8 @@
             mainHeader.innerHTML = "JavaScript is Cool";
         }
 
+        document.getElementById("btn1").addEventListener("click", headerText);
+
         // TODO: Uncomment the next line and get the sub header element by id
         let subHeader = document.getElementById("sub-header")
 
@@ -66,6 +68,9 @@
         let subHeaderColor = function () {
             subHeader.style.color = "blue";
         }
+
+        document.getElementById("btn2").addEventListener("click", subHeaderColor)
+
         // TODO: Uncomment the next line and get all list items
         let listItems = document.getElementsByTagName("li");
 
@@ -76,10 +81,15 @@
             }
         }
 
+        document.getElementById("btn3").addEventListener("click", listGrey)
+
+
         // TODO: Set text color of li with dbid = 1 to blue
         let listBlue = function () {
             listItems[0].style.color = "blue";
         }
+
+        document.getElementById("btn4").addEventListener("click", listBlue)
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
         let subParagraphs = document.getElementsByClassName("sub-paragraph");
@@ -89,15 +99,8 @@
             subParagraphs[0].textContent = "Mission Accomplished!"
         }
 
-        document.getElementById("btn1").addEventListener("click", headerText);
-
-        document.getElementById("btn2").addEventListener("click", subHeaderColor)
-
-        document.getElementById("btn3").addEventListener("click", listGrey)
-
-        document.getElementById("btn4").addEventListener("click", listBlue)
-
         document.getElementById("btn5").addEventListener("click", changeLorem)
+
 
 
 
