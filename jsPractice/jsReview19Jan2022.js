@@ -44,3 +44,28 @@ let cities = [
 cities.forEach(function (x){
     console.log(x.city)
 })
+
+let sports = ["spurs", "mavericks", "rockets", "bucks"];
+
+// sports.forEach(function (x){
+//     console.log("current team: " +x)
+// })
+//
+// /////for loop
+//
+// for(let i = 0; i <= sports.length -1; i++){
+//    console.log("current team: " + sports[i])
+// }
+
+/// does team name start with r?
+
+sports.forEach(function (team){
+    let firstLetter = team.charAt(0)
+    // console.log(firstLetter)
+    if(firstLetter === "r"){
+        console.log("true")
+    }
+    else{
+        console.log("false")
+    }
+})
