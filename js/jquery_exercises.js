@@ -34,3 +34,6 @@ if(loginStatus === true){
     $("#heading").addClass("border");
 }
 
+$("#heading").click(function () {
+    alert($("#heading").text())
+})
