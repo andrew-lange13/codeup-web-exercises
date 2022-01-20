@@ -13,7 +13,7 @@ $(document).ready(function (){
 
 /// add a class of border to my p tag
 
-$("#p-one").addClass("border");
+$(".codeup").addClass("border");
 
 // add heading to border is user is logged in
 // check value of isLoggedIn
