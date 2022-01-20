@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+<div>
+    <audio>
+        <source src="assets/Never%20Gonna%20Give%20You%20Up%20Original.mp3">
+    </audio>
+</div>
+<script src="/js/jquery-2.2.4.js"></script>
+<script>
+    "use strict";
+
+    $(document).keyup(function (event) {
+        console.log(event.keyCode);
+    });
+    let konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
+    let userInput = [];
+
+
+    $(document).keyup(function (event) {
+        userInput.push(event.keyCode)
+        if (JSON.stringify(konamiCode) === JSON.stringify(userInput)) {
+            alert("You have added 30 lives!!!");
+            $("body").css("background-image", "url(https://images.unsplash.com/photo-1527269534026-c86f4009eace?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3725&q=80)");
+            $("audio").get(0).play();
+            $("h1").css({color: "red", "font-size": "100px"});
+        } else if (userInput.length === konamiCode.length) {
+            alert("Try Again");
+            location.reload()
+        } else if (userInput.length > konamiCode.length) {
+            location.reload()
+        }
+    })
+
+
+</script>
+</body>
+</html>
