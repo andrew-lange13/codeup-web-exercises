@@ -77,7 +77,7 @@
 // input example: "bJIENsdfRAIRVIrsRFAijgRar"
 let string = "bJI*ENsd4fRAIR5VIrsRFA-ijgRar";
 let splitStr = string.split("");
-// console.log(splitStr)
+console.log(splitStr)
 splitStr.forEach(function (str){
     if(str.toUpperCase() === str.toLowerCase()){
         console.log( str + " is not a letter.")

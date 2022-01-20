@@ -1,8 +1,8 @@
 'use strict';
 
-$(document).ready(function (){
-    alert("The DOM has finished loading!");
-});
+// $(document).ready(function (){
+//     alert("The DOM has finished loading!");
+// });
 
 
 
@@ -13,7 +13,6 @@ $(document).ready(function (){
 
 /// add a class of border to my p tag
 
-$(".codeup").addClass("border");
 
 // add heading to border is user is logged in
 // check value of isLoggedIn
@@ -22,18 +21,26 @@ $(".codeup").addClass("border");
 ///assign a class if true
 ///find element
 ///add class
-let user1 = {
-    name: "bob",
-    isLoggedIn: true,
-    age: 92,
-}
+// let user1 = {
+//     name: "bob",
+//     isLoggedIn: true,
+//     age: 92,
+// }
+//
+// let loginStatus = user1.isLoggedIn;
+//
+// if(loginStatus === true){
+//     $("#heading").addClass("border");
+// }
+//
+// $("#heading").click(function () {
+//     alert($("#heading").text())
+// })
 
-let loginStatus = user1.isLoggedIn;
+// $(".codeup").css("border", "1px solid red");
 
-if(loginStatus === true){
-    $("#heading").addClass("border");
-}
-
-$("#heading").click(function () {
-    alert($("#heading").text())
+$("li").css("font-size", "20px");
+$("h1, p, li").css("background-color", "yellow");
+$("document").ready(function () {
+    alert($("h1").text())
 })
