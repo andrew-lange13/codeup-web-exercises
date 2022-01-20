@@ -6,6 +6,7 @@
 <body>
 <h1>Konami Code</h1>
 <div>
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ba4f3435-f426-4149-a8c5-2d8ed1d01a0b/d9de9va-10dfbc79-bb24-4f92-b208-1137c949d885.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JhNGYzNDM1LWY0MjYtNDE0OS1hOGM1LTJkOGVkMWQwMWEwYlwvZDlkZTl2YS0xMGRmYmM3OS1iYjI0LTRmOTItYjIwOC0xMTM3Yzk0OWQ4ODUuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.lDUAzp2YWu467GWmz7h6yyLGPauIDfMGAWfs5NgqGmg" alt="" srcset="">
     <audio>
         <source src="assets/Never%20Gonna%20Give%20You%20Up%20Original.mp3">
     </audio>
@@ -25,9 +26,10 @@
         userInput.push(event.keyCode)
         if (JSON.stringify(konamiCode) === JSON.stringify(userInput)) {
             alert("You have added 30 lives!!!");
-            $("body").css("background-image", "url(https://images.unsplash.com/photo-1527269534026-c86f4009eace?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3725&q=80)");
+            $("img").hide();
+            $("body").css("background", "url(https://i.gifer.com/2kpx.gif)");
             $("audio").get(0).play();
-            $("h1").css({color: "red", "font-size": "100px"});
+            $("h1").css({color: "chartreuse", "font-size": "100px"});
         } else if (userInput.length === konamiCode.length) {
             alert("Try Again");
             location.reload()
