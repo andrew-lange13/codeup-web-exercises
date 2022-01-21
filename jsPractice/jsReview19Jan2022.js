@@ -78,13 +78,12 @@
 let string = "bJI*ENsd4fRAIR5VIrsRFA-ijgRar";
 let splitStr = string.split("");
 console.log(splitStr)
-splitStr.forEach(function (str){
-    if(str.toUpperCase() === str.toLowerCase()){
-        console.log( str + " is not a letter.")
-    }
-   else if(str === str.toUpperCase()){
-        console.log( str + " is uppercase.")
-    } else if(str === str.toLowerCase()){
+splitStr.forEach(function (str) {
+    if (str.toUpperCase() === str.toLowerCase()) {
+        console.log(str + " is not a letter.")
+    } else if (str === str.toUpperCase()) {
+        console.log(str + " is uppercase.")
+    } else if (str === str.toLowerCase()) {
         console.log(str + " is lowercase.")
     }
 })
