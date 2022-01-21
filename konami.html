@@ -6,14 +6,14 @@
 <body>
 <h1>Konami Code</h1>
 <ul>
-    <li id="li1">up</li>
-    <li id="li2">up</li>
-    <li id="li3">down</li>
-    <li id="li4">down</li>
-    <li id="li5">left</li>
-    <li id="li6">right</li>
-    <li id="li7">left</li>
-    <li id="li8">right</li>
+    <li id="li1">&uarr;</li>
+    <li id="li2">&uarr;</li>
+    <li id="li3">&darr;</li>
+    <li id="li4">&darr;</li>
+    <li id="li5">&larr;</li>
+    <li id="li6">&rarr;</li>
+    <li id="li7">&larr;</li>
+    <li id="li8">&rarr;</li>
     <li id="li9">b</li>
     <li id="li10">a</li>
     <li id="li11">enter</li>
@@ -32,7 +32,7 @@
         console.log(event.keyCode);
     });
     $("ul").css("list-style", "none").css("display", "flex").css("padding", "0")
-    $("li").css("margin-left", "5px").css("font-size", "18px")
+    $("li").css("margin-left", "5px").css("font-size", "18px").css("text-transform", "uppercase")
 
 
     let konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
