@@ -5,6 +5,19 @@
 </head>
 <body>
 <h1>Konami Code</h1>
+<ul>
+    <li id="li1">up</li>
+    <li id="li2">up</li>
+    <li id="li3">down</li>
+    <li id="li4">down</li>
+    <li id="li5">left</li>
+    <li id="li6">right</li>
+    <li id="li7">left</li>
+    <li id="li8">right</li>
+    <li id="li9">b</li>
+    <li id="li10">a</li>
+    <li id="li11">enter</li>
+</ul>
 <div>
     <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ba4f3435-f426-4149-a8c5-2d8ed1d01a0b/d9de9va-10dfbc79-bb24-4f92-b208-1137c949d885.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JhNGYzNDM1LWY0MjYtNDE0OS1hOGM1LTJkOGVkMWQwMWEwYlwvZDlkZTl2YS0xMGRmYmM3OS1iYjI0LTRmOTItYjIwOC0xMTM3Yzk0OWQ4ODUuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.lDUAzp2YWu467GWmz7h6yyLGPauIDfMGAWfs5NgqGmg" alt="" srcset="">
     <audio>
@@ -18,9 +31,12 @@
     $(document).keyup(function (event) {
         console.log(event.keyCode);
     });
+    $("ul").css("list-style", "none").css("display", "flex").css("padding", "0")
+    $("li").css("margin-left", "5px").css("font-size", "18px")
+
+
     let konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
     let userInput = [];
-
 
     $(document).keyup(function (event) {
         userInput.push(event.keyCode)
@@ -29,7 +45,8 @@
             $("img").hide();
             $("body").css("background", "url(https://i.gifer.com/2kpx.gif)");
             $("audio").get(0).play();
-            $("h1").css({color: "chartreuse", "font-size": "100px"});
+            $("h1").hide();
+            $("ul").hide();
         } else if (userInput.length === konamiCode.length) {
             alert("Try Again");
             location.reload()
