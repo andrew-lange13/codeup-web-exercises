@@ -10,6 +10,25 @@
         .invisible {
             visibility: hidden;
         }
+        .container{
+            display: flex;
+        }
+        .frame {
+            width: 300px;
+            height: 250px;
+            border: 3px solid #ccc;
+            background: #eee;
+            margin: auto;
+            padding: 15px 10px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        button{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -84,7 +103,25 @@
     <li>The most dangerous animal in the canyon is actually the rock squirrel!</li>
     <li>No one is completely sure about the age of the Grand Canyon.</li>
 </ul>
-<button>Click Me</button>
+<button id="highlight">Click Me</button>
+<div class="container">
+<div id="frame1" class="frame">
+    <img id="img1" src="https://picsum.photos/id/237/200" alt="">
+    <button class="button" id="swap1">Swap Frame</button>
+
+
+</div>
+<div id="frame2" class="frame">
+    <img id="img2" src="https://picsum.photos/id/1025/200" alt="">
+    <button class="button" id="swap2">Swap Frame</button>
+
+</div>
+<div id="frame3" class="frame">
+    <img id="img3" src="https://picsum.photos/id/1062/200" alt="">
+    <button class="button" id="swap3">Swap Frame</button>
+
+</div>
+</div>
 <script src="js/jquery-2.2.4.js"></script>
 <script>
     // $("dd").addClass("invisible");
@@ -95,7 +132,7 @@
     $("dt").click(function () {
         $(this).css("background", "yellow")
     })
-    $('button').click(function () {
+    $('#highlight').click(function () {
         $('li:last-child').css('background', "yellow")
     })
     $('h3').click(function () {
@@ -103,6 +140,19 @@
     })
     $('li').click(function () {
         $(this).parent().children().first().css('color', 'blue')
+    })
+    let swapButton1 = $("#swap1").click(function () {
+        $('#frame1').before($('#frame2'));
+    })
+    let swapButton3 = $("#swap3").click(function () {
+        $('#frame2').before($('#frame3'));
+    })
+    $('#swap2').click(function () {
+        if (Math.random() < 0.5){
+            $('#frame1').before($('#frame2'))
+        } else{
+            $('#frame2').before($('#frame3'))
+        }
     })
 </script>
 
