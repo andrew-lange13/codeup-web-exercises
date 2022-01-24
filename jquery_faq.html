@@ -19,7 +19,9 @@
     <dd>Charles F. "Chuck" Sams III is the Director of the National Park Service.</dd>
 
     <dt>What government agency oversees the National Park Service?</dt>
-    <dd>The National Park Service is a bureau of the Department of the Interior. Directly overseeing its operation is the department's Assistant Secretary for Fish, Wildlife and Parks.</dd>
+    <dd>The National Park Service is a bureau of the Department of the Interior. Directly overseeing its operation is
+        the department's Assistant Secretary for Fish, Wildlife and Parks.
+    </dd>
 
     <dt>How many employees are in the National Park Service?</dt>
     <dd>
@@ -27,13 +29,26 @@
     </dd>
 
     <dt>How old is the National Park System?</dt>
-    <dd>The National Park Service was created by an act signed by President Woodrow Wilson on August 25, 1916. Yellowstone National Park was established by an act signed by President Ulysses S. Grant on March 1, 1872, as the nation's first national park. View the National Park System timeline.</dd>
+    <dd>The National Park Service was created by an act signed by President Woodrow Wilson on August 25, 1916.
+        Yellowstone National Park was established by an act signed by President Ulysses S. Grant on March 1, 1872, as
+        the nation's first national park. View the National Park System timeline.
+    </dd>
 
     <dt>What is the origin of the National Park Service arrowhead?</dt>
-    <dd>The arrowhead was authorized as the official National Park Service emblem by the Secretary of the Interior on July 20, 1951. The components of the arrowhead may have been inspired by key attributes of the National Park System, with the sequoia tree and bison representing vegetation and wildlife, the mountains and water representing scenic and recreational values, and the arrowhead itself representing historical and archeological values. Read more about the history of the arrowhead and other elements of NPS visual design.</dd>
+    <dd>The arrowhead was authorized as the official National Park Service emblem by the Secretary of the Interior on
+        July 20, 1951. The components of the arrowhead may have been inspired by key attributes of the National Park
+        System, with the sequoia tree and bison representing vegetation and wildlife, the mountains and water
+        representing scenic and recreational values, and the arrowhead itself representing historical and archeological
+        values. Read more about the history of the arrowhead and other elements of NPS visual design.
+    </dd>
 
     <dt>How many areas are in the National Park System?</dt>
-    <dd>The system includes 423 areas covering more than 85 million acres in every state, the District of Columbia, American Samoa, Guam, Puerto Rico, and the Virgin Islands. These areas include national parks, monuments, battlefields, military parks, historical parks, historic sites, lakeshores, seashores, recreation areas, scenic rivers and trails, and the White House. Learn more about national park designations. See the complete list of National Park Service units and related areas by type and number.</dd>
+    <dd>The system includes 423 areas covering more than 85 million acres in every state, the District of Columbia,
+        American Samoa, Guam, Puerto Rico, and the Virgin Islands. These areas include national parks, monuments,
+        battlefields, military parks, historical parks, historic sites, lakeshores, seashores, recreation areas, scenic
+        rivers and trails, and the White House. Learn more about national park designations. See the complete list of
+        National Park Service units and related areas by type and number.
+    </dd>
 
     <dt>What is the largest national park site?</dt>
     <dd>Wrangell-St. Elias National Park and Preserve, AK, at 13.2 million acres</dd>
@@ -48,7 +63,28 @@
     <dd>FY 2017 Enacted: $2.932 billion</dd>
 
 </dl>
-
+<h3>Yellowstone</h3>
+<ul>
+    <li>3,472 Square Miles</li>
+    <li>The park sits on top of an active volcano.</li>
+    <li>67 species of mammals</li>
+    <li>225 species of invasive plants</li>
+</ul>
+<h3>Great Smoky Mountains</h3>
+<ul>
+    <li>Great Smoky Mountains National Park was established in 1934.</li>
+    <li> The park has about 2,115 miles of streams within its boundaries.</li>
+    <li>The highest peak in the park is Clingmans Dome at 6,643 feet.</li>
+    <li>Over 100 species of trees grow in the park.</li>
+</ul>
+<h3>Grand Canyon</h3>
+<ul>
+    <li>Grand Canyon National Park is bigger than the entire state of Rhode Island.</li>
+    <li>The Hopi Tribe considers the Grand Canyon a gateway to the afterlife.</li>
+    <li>The most dangerous animal in the canyon is actually the rock squirrel!</li>
+    <li>No one is completely sure about the age of the Grand Canyon.</li>
+</ul>
+<button>Click Me</button>
 <script src="js/jquery-2.2.4.js"></script>
 <script>
     // $("dd").addClass("invisible");
@@ -58,6 +94,15 @@
     })
     $("dt").click(function () {
         $(this).css("background", "yellow")
+    })
+    $('button').click(function () {
+        $('li:last-child').css('background', "yellow")
+    })
+    $('h3').click(function () {
+        $('li').css('font-weight', 'bold')
+    })
+    $('li').click(function () {
+        $(this).parent().children().first().css('color', 'blue')
     })
 </script>
 

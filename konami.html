@@ -39,6 +39,7 @@
     let userInput = [];
 
     $(document).keyup(function (event) {
+        event.preventDefault()
         userInput.push(event.keyCode)
         if (JSON.stringify(konamiCode) === JSON.stringify(userInput)) {
             alert("You have added 30 lives!!!");
