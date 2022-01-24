@@ -75,17 +75,30 @@
 // write a function that accepts a string and checks whether each string is upperCase or lowerCase and returns "letter  [insert letter] is uppercase/lowercase", accordingly.  Bonus: return "is not a character" if it's not a letter
 //
 // input example: "bJIENsdfRAIRVIrsRFAijgRar"
-let string = "bJI*ENsd4fRAIR5VIrsRFA-ijgRar";
-let splitStr = string.split("");
-console.log(splitStr)
-splitStr.forEach(function (str) {
-    if (str.toUpperCase() === str.toLowerCase()) {
-        console.log(str + " is not a letter.")
-    } else if (str === str.toUpperCase()) {
-        console.log(str + " is uppercase.")
-    } else if (str === str.toLowerCase()) {
-        console.log(str + " is lowercase.")
-    }
-})
+// let string = "bJI*ENsd4fRAIR5VIrsRFA-ijgRar";
+// let splitStr = string.split("");
+// console.log(splitStr)
+// splitStr.forEach(function (str) {
+//     if (str.toUpperCase() === str.toLowerCase()) {
+//         console.log(str + " is not a letter.")
+//     } else if (str === str.toUpperCase()) {
+//         console.log(str + " is uppercase.")
+//     } else if (str === str.toLowerCase()) {
+//         console.log(str + " is lowercase.")
+//     }
+// })
 
+// Monday Morning Warmup
+// PROBLEM:  write a function that accepts a string of numbers and returns the sum of those numbers
+// INPUT 1: "42958372" --- EXPECTED OUTPUT 1: 40
+// INPUT 2: "917485"      --- EXPECTED OUTPUT 2: 34
+let str = "917485"
+let strArr = str.split("")
+console.log(strArr);
+
+
+let sum = strArr.reduce(function(total, num){
+    return parseFloat(total) + parseFloat(num);
+});
+console.log(sum);
 
