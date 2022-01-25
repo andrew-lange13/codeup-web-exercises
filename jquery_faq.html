@@ -136,7 +136,7 @@
         $('li:last-child').css('background', "yellow")
     })
     $('h3').click(function () {
-        $('li').css('font-weight', 'bold')
+        $(this).next().css('font-weight', 'bold')
     })
     $('li').click(function () {
         $(this).parent().children().first().css('color', 'blue')
