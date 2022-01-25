@@ -92,13 +92,26 @@
 // PROBLEM:  write a function that accepts a string of numbers and returns the sum of those numbers
 // INPUT 1: "42958372" --- EXPECTED OUTPUT 1: 40
 // INPUT 2: "917485"      --- EXPECTED OUTPUT 2: 34
-let str = "917485"
-let strArr = str.split("")
-console.log(strArr);
+// let str = "917485"
+// let strArr = str.split("")
+// console.log(strArr);
+//
+//
+// let sum = strArr.reduce(function(total, num){
+//     return parseFloat(total) + parseFloat(num);
+// });
+// console.log(sum);
 
+// Tuesday Morning Warmup
+// Find any duplicates in a string of numbers, return an object that shows which letters where duplicated how many times
+// INPUT: “42992338111134”
+// EXPECTED OUTPUT: {9: 2, 3: 2, 1: 4}
 
-let sum = strArr.reduce(function(total, num){
-    return parseFloat(total) + parseFloat(num);
-});
-console.log(sum);
+let input = "42992338111134"
+input = input.split("")
+console.log(input);
+let count = {}
+input.forEach (function(i){
+    count [i] = (count[i] || 0) + 1})
 
+console.log(count)
