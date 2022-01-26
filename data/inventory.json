@@ -30,5 +30,20 @@
             "tool"
         ],
         "price": 10
+    }, {
+        "title": "Wrenches",
+        "quantity": 57,
+        "categories": [
+            "tool"
+        ],
+        "price": 22
+    }, {
+        "title": "Drills",
+        "quantity": 9,
+        "categories": [
+            "tool",
+            "powered"
+        ],
+        "price": 85
     }
 ]
