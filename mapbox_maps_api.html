@@ -1,40 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
-  <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
-  <script src="js/mapbox-geocoder-utils.js"></script>
-  <title>MapBox</title>
+    <meta charset="UTF-8">
+    <title>First Mapbox Map</title>
+    <!-- Mapbox CSS -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
+    <!-- Custom CSS -->
+    <style>
+        #map {
+            /* the width and height may be set to any size */
+            width: 100%;
+            height: 700px;
+        }
+    </style>
 </head>
 <body>
 
-<h1>My Map</h1>
+<h1>My First Mapbox Map!</h1>
 
-<div id='map' style='width: 400px; height: 300px;'></div>
+<!-- The HTML element that serves as the Mapbox container -->
+<div id='map'></div>
+
+<!-- Mapbox JS -->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+<!-- Mapbox Geocoder Util Methods -->
+<script src="js/mapbox-geocoder-utils.js"></script>
+<script src="js/Tokens.js"></script>
+
+<!-- Custom JS -->
 <script>
-  mapboxgl.accessToken = 'pk.eyJ1IjoiYW5kcmV3LWxhbmdlMTMiLCJhIjoiY2t5dnZseWFrMDJqazJvbzJ6cjJsMjh2OSJ9.iupV8PBO_PvcXBGqU0Ewyw';
-  const map = new mapboxgl.Map({
-    container: 'map', // container ID
-    style: 'mapbox://styles/mapbox/streets-v11', // style URL
-    center: [-98.4916, 29.4252], // starting position [lng, lat]
-    zoom: 10 // starting zoom
-  });
+    mapboxgl.accessToken = mapboxToken;
+    let map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        zoom: 10,
+        center: [-98.4916, 29.4252]
+    });
 
-  let marker = new mapboxgl.Marker()
-          .setLngLat([-98.4916, 29.4260])
-          .addTo(map);
-
-  let alamoPopup = new mapboxgl.Popup()
-          .setHTML("<p>Remember The Alamo!</p>")
-
-  marker.setPopup(alamoPopup)
+    // Create a new marker.
+    const marker = new mapboxgl.Marker({
+        color: 'chartreuse',
+        draggable: true,
+    }).setLngLat([-98.4916, 29.4252])
+        .addTo(map);
 
 
+    const popup = new mapboxgl.Popup()
+        .setLngLat([-98.4916, 29.4252])
+        .setHTML('<h1>Hello World!</h1>')
+        .addTo(map);
+
+    geocode("600 Navarro St #350, San Antonio, TX 78205", mapboxToken).then(function(result) {
+        console.log(result);
+        map.setCenter(result);
+        map.setZoom(20);
+    });
 
 </script>
+
 </body>
 </html>
+
