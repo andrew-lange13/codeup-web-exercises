@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+  <script src="js/mapbox-geocoder-utils.js"></script>
+  <title>MapBox</title>
+</head>
+<body>
+
+<h1>My Map</h1>
+
+<div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiYW5kcmV3LWxhbmdlMTMiLCJhIjoiY2t5dnZseWFrMDJqazJvbzJ6cjJsMjh2OSJ9.iupV8PBO_PvcXBGqU0Ewyw';
+  const map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    center: [-98.4916, 29.4252], // starting position [lng, lat]
+    zoom: 10 // starting zoom
+  });
+
+  let marker = new mapboxgl.Marker()
+          .setLngLat([-98.4916, 29.4260])
+          .addTo(map);
+
+  let alamoPopup = new mapboxgl.Popup()
+          .setHTML("<p>Remember The Alamo!</p>")
+
+  marker.setPopup(alamoPopup)
+
+
+
+</script>
+</body>
+</html>
