@@ -5,6 +5,9 @@
     <title>First Mapbox Map</title>
     <!-- Mapbox CSS -->
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
+
     <!-- Custom CSS -->
     <style>
         #map {
@@ -26,36 +29,55 @@
 
 <!-- Mapbox Geocoder Util Methods -->
 <script src="js/mapbox-geocoder-utils.js"></script>
-<script src="js/Tokens.js"></script>
 
 <!-- Custom JS -->
 <script>
-    mapboxgl.accessToken = mapboxToken;
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYW5kcmV3LWxhbmdlMTMiLCJhIjoiY2t5eGl0b2ttMGl3bzJ1cDN0NnE4dTZ6NCJ9.12ISdLDcKrmMiSew8fyl0A';
     let map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v9',
         zoom: 10,
-        center: [-98.4916, 29.4252]
+        center: [-99.733147, 32.448734]
     });
 
     // Create a new marker.
     const marker = new mapboxgl.Marker({
         color: 'chartreuse',
         draggable: true,
-    }).setLngLat([-98.4916, 29.4252])
+    }).setLngLat([-99.776296, 32.371981])
         .addTo(map);
+    //
+    //
+    map.on('click', () => {
+        new mapboxgl.Popup({closeOnMove: true})
+            .setLngLat([-99.776296, 32.371981])
+            .setHTML('<h1>The Shed Market</h1>')
+            .addTo(map);
+    })
 
 
-    const popup = new mapboxgl.Popup()
-        .setLngLat([-98.4916, 29.4252])
-        .setHTML('<h1>Hello World!</h1>')
-        .addTo(map);
 
-    geocode("600 Navarro St #350, San Antonio, TX 78205", mapboxToken).then(function(result) {
-        console.log(result);
+    //
+    // const geocoder = new MapboxGeocoder({
+    //     // Initialize the geocoder
+    //     accessToken: mapboxgl.accessToken, // Set the access token
+    //     placeholder: 'Search for places',
+    //     proximity: {
+    //         longitude: -99.733147,
+    //         latitude: 32.448734
+    //     },
+    //     mapboxgl: mapboxgl, // Set the mapbox-gl instance
+    //     marker: false // Do not use the default marker style
+    // });
+    //
+    // // Add the geocoder to the map
+    // map.addControl(geocoder);
+
+    geocode('Abilene, TX 79606', mapboxgl.accessToken).then(function (result) {
         map.setCenter(result);
-        map.setZoom(20);
-    });
+        map.setZoom(11);
+    })
+
 
 </script>
 
