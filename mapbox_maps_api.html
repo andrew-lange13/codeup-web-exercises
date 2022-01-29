@@ -56,12 +56,12 @@
         }
     ]
 
-    restaurants.forEach(function (value, index) {
-        console.log(value)
-        new mapboxgl.Marker({
-            color: 'chartreuse',
-        }).setLngLat(location)
-        .addTo(map);
+    restaurants.forEach(function (restaurant) {
+        geocode(restaurant.location, MAPBOX_KEY).then(function (restaurantMarkers) {
+            let marker = new mapboxgl.Marker()
+                .setLngLat(restaurantMarkers)
+                .addTo(map)
+        })
     })
 
 
