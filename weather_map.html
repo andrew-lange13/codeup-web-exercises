@@ -52,20 +52,34 @@
             console.log(dataSliced);
             // Start forEach loop
             $.each(dataSliced, function (i) {
-                // console.log(data.daily[i].dt)
                 // Make date readable
                 let day = new Date(data.daily[i].dt * 1000).toLocaleDateString("en", {
                     weekday: "long"
                 })
-                weatherData += "<div class='col'>" +
-                    "<div class='card bg-secondary'>" +
-                    "<h3>" + day + "</h3>" +
-                    "<ul class='list-group list-group-flush'>" +
-                    "<li class='list-group-item-dark bg-secondary list-unstyled'>" + "Low: " + data.daily[i].temp.min + "</li>" +
-                    "<li class='list-group-item-dark bg-secondary list-unstyled'>" + "High: " + data.daily[i].temp.max + "</li>" +
-                    "</ul>" +
-                    "</div>" +
-                    "</div>"
+                let lowTemp = data.daily[i].temp.min  //Low Temp Variable
+                let highTemp = data.daily[i].temp.max  //High Temp Variable
+                let description = data.daily[i].weather[0].description  ///Weather Description
+                let humidity = data.daily[i].humidity  ///Humidity
+                let wind = data.daily[i].wind_speed  ////Wind Speed
+                let pressure = data.daily[i].pressure  ////Barometric Pressure
+                let weatherIcon = data.daily[i].weather[0].icon  ///Icon Code
+                // console.log(weatherIcon);
+                // Adds each html tag and classes in string..... there's probably a better way
+                weatherData += "<div class='col'>";
+                weatherData += "<div class='card'>";
+                weatherData += "<div class='card-header bg-primary text-center'>" + day + "</div>";
+                weatherData += "<div class='card-body'>";
+                weatherData += "<p class='text-center'>" + lowTemp.toFixed(1) + " &#8457" + " / " + highTemp.toFixed(1) + " &#8457" + "</p>";
+                weatherData += "<ul class='list-group list-group-flush'>";
+                weatherData += "<li class='list-group-item list-unstyled text-center'>"  + "<img src='https://openweathermap.org/img/wn/" + weatherIcon + ".png'/>" +  "</li>";
+                weatherData += "<li class='list-group-item list-unstyled'>" + "Description:  " + description + "</li>";
+                weatherData += "<li class='list-group-item list-unstyled'>" + "Humidity:  " + humidity + "</li>";
+                weatherData += "<li class='list-group-item list-unstyled'>" + "Wind:  " + wind + "</li>";
+                weatherData += "<li class='list-group-item list-unstyled'>" + "Pressure:  " + pressure + "</li>";
+                weatherData += "</ul>";
+                weatherData += "</div>";
+                weatherData += "</div>";
+                weatherData += "</div>";
             })
             // console.log(weatherData);
             $(".row").html(weatherData)
