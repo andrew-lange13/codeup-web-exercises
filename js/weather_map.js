@@ -48,6 +48,17 @@ $(function () {
             weatherData += "</div>";
         })
         // console.log(weatherData);
-        $(".row").html(weatherData)
+        $("#weather").html(weatherData)
     })
+    // MAP
+
+    mapboxgl.accessToken = MAPBOX_KEY;
+    let map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        zoom: 10,
+        center: [-99.733147, 32.448734]
+    });
+
+
 })
