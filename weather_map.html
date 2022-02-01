@@ -16,6 +16,10 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
 
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
+
+
     <!--WeatherMap JS-->
     <script src="js/weather_map.js"></script>
     <title>Weather Map</title>
@@ -24,15 +28,14 @@
 <nav class="navbar navbar-dark bg-primary mb-5">
     <div class="container-fluid">
         <a class="navbar-brand text-dark">Weather App</a>
-        <form class="d-flex">
-            <input class="form-control me-2 bg-dark" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-primary bg-dark" type="submit">Search</button>
-        </form>
+
     </div>
 </nav>
 <main class="container-fluid">
+    <div id="geocoder" class="my-5"></div>
     <div class="row" id="weather"></div>
     <div class="mt-5 p-3" id="map" style="height: 25rem; width: 100%" ></div>
+
 
 </main>
 
