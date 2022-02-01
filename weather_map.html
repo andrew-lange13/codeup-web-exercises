@@ -25,7 +25,8 @@
         </form>
     </div>
 </nav>
-<main class="container-fluid" id="weather">
+<main class="container-fluid">
+    <div class="row" id="weather"></div>
 
 </main>
 
@@ -33,22 +34,42 @@
 <script>
     'use strict'
     $(function () {
-        // Define Variables
+        // API Key Variable
         const key = WEATHER_MAP_KEY
         // API Call that logs the JSON Object for Abilene weather by lat/long
         $.get("https://api.openweathermap.org/data/2.5/onecall", {
-                APPID: key,
-                lat: 32.448734,
-                lon: -99.733147,
-                units: "imperial",
-                exclude: "current,minutely,hourly"
+            APPID: key,
+            lat: 32.448734,
+            lon: -99.733147,
+            units: "imperial",
+            exclude: "current,minutely,hourly,alerts"
         }).done(function (data) {
             console.log(data);
-            $.each(data, function (i) {
-                console.log(data.daily)
+            // Create variable that will get passed to HTML
+            let weatherData = "";
+            // Shorten array from 8 to 5 days
+            let dataSliced = data.daily.slice(0,5);
+            console.log(dataSliced);
+            // Start forEach loop
+            $.each(dataSliced, function (i) {
+                // console.log(data.daily[i].dt)
+                // Make date readable
+                let day = new Date(data.daily[i].dt * 1000).toLocaleDateString("en", {
+                    weekday: "long"
+                })
+                weatherData += "<div class='col'>" +
+                    "<div class='card bg-secondary'>" +
+                    "<h3>" + day + "</h3>" +
+                    "<ul class='list-group list-group-flush'>" +
+                    "<li class='list-group-item-dark bg-secondary list-unstyled'>" + "Low: " + data.daily[i].temp.min + "</li>" +
+                    "<li class='list-group-item-dark bg-secondary list-unstyled'>" + "High: " + data.daily[i].temp.max + "</li>" +
+                    "</ul>" +
+                    "</div>" +
+                    "</div>"
             })
-
-            })
+            // console.log(weatherData);
+            $(".row").html(weatherData)
+        })
     })
 </script>
 
