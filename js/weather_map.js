@@ -91,7 +91,10 @@ $(function () {
 
         new mapboxgl.Marker()
             .setLngLat(weatherCoords)
+            .setDraggable(true)
             .addTo(map);
+
+
 
         console.log(weatherCoords.lat);
         console.log(weatherCoords.lng);
@@ -150,6 +153,8 @@ $(function () {
         })
 
     })
+
+
     /////Geocoder
     const geocoder = new MapboxGeocoder({
         mapboxgl: mapboxgl,
