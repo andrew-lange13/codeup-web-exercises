@@ -73,7 +73,7 @@ $(function () {
             "type": "raster",
             "source": {
                 "type": "raster",
-                "tiles": ["https://tile.openweathermap.org/map/temp_new/{z}/{x}/{y}.png?appid=874718354841f0e0250b4b06a05a971e"],
+                "tiles": ["https://tile.openweathermap.org/map/temp_new/{z}/{x}/{y}.png?appid=" + WEATHER_MAP_KEY],
                 "tileSize": 256
             },
             "minzoom": 0,
