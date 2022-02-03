@@ -67,19 +67,21 @@ $(function () {
 
     });
 
-    map.on('load', function(){
-        map.addLayer({
-            "id": "simple-tiles",
-            "type": "raster",
-            "source": {
-                "type": "raster",
-                "tiles": ["https://tile.openweathermap.org/map/temp_new/{z}/{x}/{y}.png?appid=" + WEATHER_MAP_KEY],
-                "tileSize": 256
-            },
-            "minzoom": 0,
-            "maxzoom": 22
-        });
-    });
+    // Map weather layer
+
+    // map.on('load', function(){
+    //     map.addLayer({
+    //         "id": "simple-tiles",
+    //         "type": "raster",
+    //         "source": {
+    //             "type": "raster",
+    //             "tiles": ["https://tile.openweathermap.org/map/temp_new/{z}/{x}/{y}.png?appid=" + WEATHER_MAP_KEY],
+    //             "tileSize": 256
+    //         },
+    //         "minzoom": 0,
+    //         "maxzoom": 22
+    //     });
+    // });
 
 
 
