@@ -78,4 +78,4 @@ for (const developer of developers) {
 }
 list += `</ul>`;
 
-console.log(developers);
+console.log(list);
