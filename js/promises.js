@@ -1,16 +1,11 @@
 'use strict'
 
-function getGithubUsernames() {
-    return fetch('https://api.github.com/users')
-        .then(response => response.json())
-}
+const gitCommit = () => fetch('https://api.github.com/repos/andrew-lange13/codeup-web-exercises/commits', {headers: {
+    'authorization': 'GITHUB'}})
+    .then(response => response.json());
 
-// later on...
+console.log(gitCommit());
 
-getGithubUsernames().then( users => {
-    users.forEach( userObj => {
-        // do something with each username
-        console.log(userObj.login);
-    });
-}).catch(error => console.error(error));
+
+
 
