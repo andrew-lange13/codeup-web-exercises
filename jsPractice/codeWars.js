@@ -16,10 +16,10 @@ function filter_list(l) {
 
 // Write a function definition named mean that takes in sequence of numbers and returns the average value
 
-function mean(x){
+function mean(x) {
     let reducer = (previousValue, currentValue) => previousValue + currentValue;
     let y = (x.reduce(reducer));
-    return y/x.length
+    return y / x.length
 }
 
 
@@ -31,6 +31,34 @@ function mean(x){
 // "Success"  =>  ")())())"
 // "(( @"     =>  "))(("
 
-function duplicateEncode(word){
+function duplicateEncode(word) {}
 
+// }Write a function that takes an integer minutes and converts it to seconds.
+//
+function convert(minutes) {
+    return minutes * 60
+}
+
+// Create a function that returns true if the first array can be nested inside the second.
+//
+//     arr1 can be nested inside arr2 if:
+//
+// arr1's min is greater than arr2's min.
+//     arr1's max is less than arr2's max.
+
+
+function canNest(arr1, arr2) {
+    return Math.min(...arr1) > Math.min(...arr2) && Math.max(...arr1) < Math.max(...arr2);
+}
+
+// Create a function that takes a number (step) as an argument and returns the number of matchsticks in that step. See step 1, 2 and 3 in the image above.
+
+function matchHouses(step) {
+    if (step === 0){
+        return 0
+    } else if(step === 1){
+        return 6
+    } else {
+        return 1 + (step * 5)
+    }
 }

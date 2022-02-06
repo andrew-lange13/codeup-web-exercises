@@ -107,11 +107,11 @@
 // INPUT: “42992338111134”
 // EXPECTED OUTPUT: {9: 2, 3: 2, 1: 4}
 
-let input = "42992338111134"
-input = input.split("")
-console.log(input);
-let count = {}
-input.forEach (function(i){
-    count [i] = (count[i] || 0) + 1})
-
-console.log(count)
+// let input = "42992338111134"
+// input = input.split("")
+// console.log(input);
+// let count = {}
+// input.forEach (function(i){
+//     count [i] = (count[i] || 0) + 1})
+//
+// console.log(count)
