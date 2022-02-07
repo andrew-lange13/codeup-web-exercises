@@ -52,8 +52,8 @@ const users = [
 
 // Use .reduce to get the total years of experience from the list of users. Once you get the total of years you can use the result to calculate the average.
 
-// let experience = users.reduce((total, user) => {
-//     return total + user.yearsOfExperience
+// let experience = users.reduce((previousValue, currentValue) => {
+//     return previousValue + currentValue.yearsOfExperience
 // }, 0)
 //
 // console.log(experience);
@@ -70,22 +70,106 @@ const users = [
 //
 // console.log(longestEmail);
 
+// let longestEmail = users.reduce((previousValue, currentValue) => {
+//     return previousValue.email.length > currentValue.email.length ? previousValue : currentValue
+// }).email;
+//
+// console.log(longestEmail);
 
 // Use .reduce to get the list of user's names in a single string. Example: Your instructors are: ryan, luis, zach, fernando, justin.
 
 // let nameString = users.reduce((a, b) => [
 //     ...a, b.name], []).join(", ");
 
-// let nameString = users.reduce((prev, curr) => (
-//     prev.name ? prev.name : prev) + ", " + curr.name
+// let nameString = users.reduce((prev, curr) =>
+//     (prev.name ? prev.name : prev) + ", " + curr.name
 // )
+
+// let nameString = users.reduce((previousValue, currentValue) => {
+//     return previousValue + currentValue.name + ", "
+// },"");
 //
 // console.log(nameString);
 
 // Use .reduce to get the unique list of languages from the list of users.
 
-let languageList = users.reduce((prev, curr) => (
-    prev.languages ? curr.languages : prev) + ", " + curr.languages
-)
 
-console.log(languageList);
+// let languageList = users.reduce((previousValue, currentValue) => {
+//     return previousValue + currentValue.languages + ", "
+// },"")
+//
+// console.log(languageList);
+
+const fruits = ["cantaloupe", "orange", "date", "elderberry", "ugli fruit", "pineapple"];
+
+const customers = [
+    {
+        name: "Fred",
+        age: 58,
+        occupation: "Police Officer",
+        noOfPurchases: 4
+    },
+    {
+        name: "Samantha",
+        age: 54,
+        occupation: "Teacher",
+        noOfPurchases: 18
+    },
+    {
+        name: "Charles",
+        age: 38,
+        occupation: "Librarian",
+        noOfPurchases: 9
+    }
+];
+
+const pets = [
+    {
+        name: 'Bud',
+        age: 2,
+        breed: 'Pug'
+    },
+    {
+        name: 'Gabby',
+        age: 10,
+        breed: 'Retriever'
+    },
+    {
+        name: 'Fred',
+        age: 1,
+        breed: 'Lab'
+    },
+    {
+        name: 'Bowser',
+        age: 2,
+        breed: 'Pug'
+    }
+];
+
+const family = [
+    {
+        name: "Pam",
+        gender: "female",
+        age: 29,
+    },
+    {
+        name: "Amelie",
+        gender: "female",
+        age: 10,
+    },
+    {
+        name: "Justin",
+        gender: "male",
+        age: 32,
+    },
+];
+
+// Create an array of the first letters of each fruit
+
+// let fruitLetter = fruits.map((fruit) =>{
+//     return fruit[0]
+// })
+//
+// console.log(fruitLetter);
+
+// Create array of user objects based on the customers array of objects (each user object should just have name and age properties)
