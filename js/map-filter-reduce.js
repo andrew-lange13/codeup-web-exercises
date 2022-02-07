@@ -80,15 +80,15 @@ const users = [
 
 // let nameString = users.reduce((a, b) => [
 //     ...a, b.name], []).join(", ");
-
+//
 // let nameString = users.reduce((prev, curr) =>
 //     (prev.name ? prev.name : prev) + ", " + curr.name
 // )
 
 // let nameString = users.reduce((previousValue, currentValue) => {
 //     return previousValue + currentValue.name + ", "
-// },"");
-//
+// },"Your Instructors are: ");
+
 // console.log(nameString);
 
 // Use .reduce to get the unique list of languages from the list of users.
@@ -173,3 +173,31 @@ const family = [
 // console.log(fruitLetter);
 
 // Create array of user objects based on the customers array of objects (each user object should just have name and age properties)
+
+// let customersObj = customers.map(({name, age}) => ({name, age}))
+// console.log(customersObj)
+
+// Create an array of civil servant customers (teachers and police officers) containing the same properties as the objects on the customers objects
+
+// let civilServantCustomers = customers.map(({name, age, occupation, noOfPurchases})=>({
+//     name, age, occupation, noOfPurchases
+// }))
+//
+// console.log(civilServantCustomers);
+
+// Determine the average age of all the customers
+
+// let customerAge = customers.reduce((previousValue, currentValue) => {
+//     return (previousValue + currentValue.age);
+// }, 0)
+//
+// console.log(customerAge/customers.length);
+
+// Create a function makeSuperPet() that takes in the pets array as input and returns a single pet object with the following shape...
+//
+// {
+//     name: ALL_PET_NAMES_CONCATENATED_INTO_A_SINGLE_STRING,
+//         age: THE_TOTAL_OF_ALL_PET_AGES,
+//     breed: THE_FIRST_LETTERS_OF_ALL_PET_BREEDS_CONCATENATATED_INTO_A_SINGLE_STRING
+// }
+
