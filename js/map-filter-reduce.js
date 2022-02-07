@@ -85,18 +85,27 @@ const users = [
 //     (prev.name ? prev.name : prev) + ", " + curr.name
 // )
 
-// let nameString = users.reduce((previousValue, currentValue) => {
-//     return previousValue + currentValue.name + ", "
+// let nameString = users.reduce((previousValue, currentValue, index) => {
+//     if(index === users.length -1){
+//         return previousValue + currentValue.name + "."
+//     } else {
+//         return previousValue + currentValue.name + ", "
+//     }
 // },"Your Instructors are: ");
-
+//
 // console.log(nameString);
 
 // Use .reduce to get the unique list of languages from the list of users.
 
 
 // let languageList = users.reduce((previousValue, currentValue) => {
-//     return previousValue + currentValue.languages + ", "
-// },"")
+//     currentValue.languages.forEach(element => {
+//         if(!previousValue.includes(element)){
+//             previousValue.push(element)
+//         }
+//     })
+//     return previousValue
+// },[])
 //
 // console.log(languageList);
 
