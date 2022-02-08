@@ -1,17 +1,21 @@
 'use strict';
 
-(function () {
-    const gitCommit = () => fetch('https://api.github.com/repos/andrew-lange13/codeup-web-exercises/commits', {headers: {
-            'authorization': 'GITHUB'}})
-        .then(response => response.json())
-        .then(repos => {
-            repos.forEach(repoObj => {
-                console.log(repoObj.commit.committer.date)
-            })
-        })
+$(function () {
+    function gitLastCommit(user) {
+        return fetch(`https://api.github.com/users/${user}/events/public`, {
+            headers: {
+                'authorization': 'GITHUB'
+            }
+        }).then(response => response.json())
+            .then(users => {
+                users.forEach(userObj => {
+                    console.log(userObj.created_at)
+                })
+            });
+    }
 
 
-    console.log(gitCommit());
+    console.log(gitLastCommit("andrew-lange13"));
 })();
 
 
