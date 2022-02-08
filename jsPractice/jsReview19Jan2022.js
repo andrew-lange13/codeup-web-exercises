@@ -115,3 +115,22 @@
 //     count [i] = (count[i] || 0) + 1})
 //
 // console.log(count)
+
+// 2/8/2022 Warmup
+
+// Write a function that removes any duplicates from an array.
+//     Input: [2,3,5,8,3,1,2,6,3,2,7,8,2,4,7]
+// expected output: [2,3,5,8,1,6,7,4]
+
+// let inputDupes = new Set([2,3,5,8,3,1,2,6,3,2,7,8,2,4,7])
+
+let inputDupes = [2,3,5,8,3,1,2,6,3,2,7,8,2,4,7]
+
+let removeDupes = inputDupes.reduce((previousValue, currentValue) => {
+    if(previousValue.indexOf(currentValue) === -1){
+        previousValue.push(currentValue)
+    }
+    return previousValue
+},[])
+
+console.log(removeDupes);
