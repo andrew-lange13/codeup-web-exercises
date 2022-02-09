@@ -124,13 +124,35 @@
 
 // let inputDupes = new Set([2,3,5,8,3,1,2,6,3,2,7,8,2,4,7])
 
-let inputDupes = [2,3,5,8,3,1,2,6,3,2,7,8,2,4,7]
+// let inputDupes = [2,3,5,8,3,1,2,6,3,2,7,8,2,4,7]
+//
+// let removeDupes = inputDupes.reduce((previousValue, currentValue) => {
+//     if(previousValue.indexOf(currentValue) === -1){
+//         previousValue.push(currentValue)
+//     }
+//     return previousValue
+// },[])
+//
+// console.log(removeDupes);
 
-let removeDupes = inputDupes.reduce((previousValue, currentValue) => {
-    if(previousValue.indexOf(currentValue) === -1){
-        previousValue.push(currentValue)
-    }
-    return previousValue
-},[])
 
-console.log(removeDupes);
+// 2/9/2022 Warmup
+
+// write a function that takes a string as argument and returns the number of vowels contained in that string.
+//     The vowels are “a”, “e”, “i”, “o”, “u”.
+// input: "helicopter"
+// output: 4
+// reason: there are 4 vowels in the input word helicopter
+
+
+function vowels(string) {
+    let vowelCount = 0;
+    const vowels = ["a", "e", "i", "o", "u"];
+    for (let char of string){
+        if(vowels.includes(char)){
+            vowelCount++
+        }
+    } return vowelCount
+}
+
+console.log(vowels("helicopter"))
