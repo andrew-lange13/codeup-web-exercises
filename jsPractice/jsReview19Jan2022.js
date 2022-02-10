@@ -145,14 +145,34 @@
 // reason: there are 4 vowels in the input word helicopter
 
 
-function vowels(string) {
-    let vowelCount = 0;
-    const vowels = ["a", "e", "i", "o", "u"];
-    for (let char of string){
-        if(vowels.includes(char)){
-            vowelCount++
-        }
-    } return vowelCount
+// function vowels(string) {
+//     let vowelCount = 0;
+//     const vowels = ["a", "e", "i", "o", "u"];
+//     for (let char of string){
+//         if(vowels.includes(char)){
+//             vowelCount++
+//         }
+//     } return vowelCount
+// }
+//
+// console.log(vowels("helicopter"))
+
+
+// write a function that counts the number of duplicate characters.
+//     example input: "adsjfdsfsfjsdjfhacabcsbajda"
+// expected output: { a: 5, b: 2, c: 2, d: 4, f: 4, j: 4, s: 5 }
+
+function countDupes(str) {
+    if (str) {
+        let counter = {}
+        for (let i = 0; i < str.length; i++) {
+            if(counter[str[i]]){
+                counter[str[i]] += 1;
+            } else {
+                counter[str[i]] = 1;
+            }
+        }console.log(counter)
+    }
 }
 
-console.log(vowels("helicopter"))
+countDupes("adsjfdsfsfjsdjfhacabcsbajda")
