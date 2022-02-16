@@ -162,17 +162,35 @@
 //     example input: "adsjfdsfsfjsdjfhacabcsbajda"
 // expected output: { a: 5, b: 2, c: 2, d: 4, f: 4, j: 4, s: 5 }
 
-function countDupes(str) {
-    if (str) {
-        let counter = {}
-        for (let i = 0; i < str.length; i++) {
-            if(counter[str[i]]){
-                counter[str[i]] += 1;
-            } else {
-                counter[str[i]] = 1;
-            }
-        }console.log(counter)
-    }
-}
+// function countDupes(str) {
+//     if (str) {
+//         let counter = {}
+//         for (let i = 0; i < str.length; i++) {
+//             if(counter[str[i]]){
+//                 counter[str[i]] += 1;
+//             } else {
+//                 counter[str[i]] = 1;
+//             }
+//         }console.log(counter)
+//     }
+// }
+//
+// countDupes("adsjfdsfsfjsdjfhacabcsbajda")
 
-countDupes("adsjfdsfsfjsdjfhacabcsbajda")
+// Looping a Triangle
+
+// for (let i = "#"; i.length < 8; i+= "#"){
+//     console.log(i)
+// }
+
+// Javascript - morning warmup
+// Write a function that places all negative integers at the end of an array.
+//     Example input: [-2,5,8,-3,3,5,-9,6]
+// Expected output: [5,8,3,5,6,-2,-3,-9]
+
+let array1 = [-2,5,8,-3,3,5,-9,6];
+
+console.log(array1.sort().reverse());
+
+
+
