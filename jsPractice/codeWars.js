@@ -31,7 +31,8 @@ function mean(x) {
 // "Success"  =>  ")())())"
 // "(( @"     =>  "))(("
 
-function duplicateEncode(word) {}
+function duplicateEncode(word) {
+}
 
 // }Write a function that takes an integer minutes and converts it to seconds.
 //
@@ -54,11 +55,27 @@ function canNest(arr1, arr2) {
 // Create a function that takes a number (step) as an argument and returns the number of matchsticks in that step. See step 1, 2 and 3 in the image above.
 
 function matchHouses(step) {
-    if (step === 0){
+    if (step === 0) {
         return 0
-    } else if(step === 1){
+    } else if (step === 1) {
         return 6
     } else {
         return 1 + (step * 5)
     }
 }
+
+// TODO: Write a function that takes a string and an an integer n as parameters and returns a list of all words that are longer than n.
+
+function filterLongWords(sentence, n) {
+    let sentArray = sentence.split(" ");
+    let newArray = [];
+    for (let i = 0; i < sentArray.length; i++) {
+        if (sentArray[i].length > n) {
+            newArray.push(sentArray[i])
+        }
+    }
+    return newArray;
+}
+
+filterLongWords("The quick brown fox jumps over the lazy dog", 4);
+
