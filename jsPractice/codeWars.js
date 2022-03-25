@@ -109,4 +109,16 @@ function solution(number) {
     return sum;
 }
 
-console.log(solution(10));
+
+// TODO: Return the number (count) of vowels in the given string.
+
+function getCount(str) {
+    let vowelsCount = 0;
+    const stringArray = Array.from(str)
+    for (let i = 0; i < stringArray.length; i++) {
+        if (stringArray[i] === 'a' || stringArray[i] === 'e' || stringArray[i] === 'i' || stringArray[i] === 'o' || stringArray[i] === 'u') {
+            vowelsCount += 1
+        }
+    }
+    return vowelsCount;
+}
