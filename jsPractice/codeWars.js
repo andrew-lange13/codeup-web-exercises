@@ -122,3 +122,14 @@ function getCount(str) {
     }
     return vowelsCount;
 }
+
+// TODO: Given a principal p, interest rate r, and a number of periods n, return an array [total owed under simple interest, total owed under compound interest].
+
+function interest(P,r,n) {
+    const totalArray = [];
+    let simple = (P*r*n) + P;
+    totalArray.push(parseInt(Math.round(simple)));
+    let compound = P*(Math.pow((1+r),n));
+    totalArray.push(parseInt(Math.round(compound)))
+    return totalArray
+}
