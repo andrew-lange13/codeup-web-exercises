@@ -133,3 +133,14 @@ function interest(P,r,n) {
     totalArray.push(parseInt(Math.round(compound)))
     return totalArray
 }
+
+// TODO: Warn the sheep in front of the wolf that it is about to be eaten. Remember that you are standing at the front of the queue which is at the end of the array:
+
+function warnTheSheep(queue) {
+    if (queue[queue.length-1] === "wolf"){
+        return "Pls go away and stop eating my sheep"
+    } else{
+        return "Oi! Sheep number " + (queue.length - (queue.indexOf("wolf")+1)) + "! You are about to be eaten by a wolf!"
+    }
+}
+
