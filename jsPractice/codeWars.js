@@ -125,11 +125,11 @@ function getCount(str) {
 
 // TODO: Given a principal p, interest rate r, and a number of periods n, return an array [total owed under simple interest, total owed under compound interest].
 
-function interest(P,r,n) {
+function interest(P, r, n) {
     const totalArray = [];
-    let simple = (P*r*n) + P;
+    let simple = (P * r * n) + P;
     totalArray.push(parseInt(Math.round(simple)));
-    let compound = P*(Math.pow((1+r),n));
+    let compound = P * (Math.pow((1 + r), n));
     totalArray.push(parseInt(Math.round(compound)))
     return totalArray
 }
@@ -137,16 +137,20 @@ function interest(P,r,n) {
 // TODO: Warn the sheep in front of the wolf that it is about to be eaten. Remember that you are standing at the front of the queue which is at the end of the array:
 
 function warnTheSheep(queue) {
-    if (queue[queue.length-1] === "wolf"){
+    if (queue[queue.length - 1] === "wolf") {
         return "Pls go away and stop eating my sheep"
-    } else{
-        return "Oi! Sheep number " + (queue.length - (queue.indexOf("wolf")+1)) + "! You are about to be eaten by a wolf!"
+    } else {
+        return "Oi! Sheep number " + (queue.length - (queue.indexOf("wolf") + 1)) + "! You are about to be eaten by a wolf!"
     }
 }
 
 // TODO: You receive an array with your peers' test scores. Now calculate the average and compare your score! Return True if you're better, else False!
 
 function betterThanAverage(classPoints, yourPoints) {
-
+    let sum = 0;
+    for (let i = 0; i < classPoints.length; i++) {
+        sum += classPoints[i];
+    }
+    let average = sum / (classPoints.length);
+    return yourPoints > average;
 }
-
