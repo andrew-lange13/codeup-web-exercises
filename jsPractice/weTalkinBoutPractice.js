@@ -637,3 +637,41 @@ console.log(multiply(2, 8));
 // password and the user is at least 18 years old. If the user is an admin,
 //     they do not have to be a certain age but the password must still not match
 // the username.
+
+
+// In this challenge, you are going to create a function that tells us how many days, weeks and months we have left if we live until 90 years old.
+//
+//
+//
+//     It will take your current age as the input and console.logs a message with our time left in this format:
+//
+//     You have x days, y weeks, and z months left.
+//
+//     Where x, y and z are replaced with the actual calculated numbers.
+//
+//
+//
+//     For this challenge, assume there are 365 days in a year, 52 weeks in a year and 12 months in a year.
+//
+//
+//
+//     IMPORTANT your console.log output should match the Example Output format exactly, even the positions of the commas and full stops.
+//
+//     Example Input
+//
+// e.g. If you are 56 years old:
+//
+//     lifeInWeeks(56)
+// Example Output
+//
+// You have 12410 days, 1768 weeks, and 408 months left.
+
+function howMuchTimeLeft(age){
+    let yearsLeft = 90 - age;
+    let daysLeft = yearsLeft * 365;
+    let weeksLeft = yearsLeft * 52;
+    let monthsLeft = yearsLeft *12;
+    console.log('You have ' + daysLeft + ' days, ' + weeksLeft + ' weeks, and ' + monthsLeft + ' months left.')
+}
+
+howMuchTimeLeft(34);
