@@ -704,3 +704,23 @@ function bmiCalculator(weight, height){
 }
 
 console.log(bmiCalculator(99.8, 1.88));
+
+// Write a program that works out whether if a given year is a leap year
+
+//     This is how to work out whether if a particular year is a leap year:
+//
+//     A year is a leap year if it is evenly divisible by 4 ;
+//
+// except if that year is also evenly divisible by 100;
+//
+// unless that year is also evenly divisible by 400.
+
+function isLeap(year){
+    if(year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0){
+        return 'Leap year.'
+    } else{
+        return 'Not leap year.'
+    }
+}
+
+console.log(isLeap(2024))
