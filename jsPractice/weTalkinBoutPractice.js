@@ -304,7 +304,7 @@ console.log(invertSign(6));
 
 // - Write a function named `degreesToRadians(number)`
 
-function degreesToRadians(number){
+function degreesToRadians(number) {
     return number * (Math.PI / 180);
 }
 
@@ -312,7 +312,7 @@ console.log(degreesToRadians(1));
 
 // - Write a function named `radiansToDegrees(number)`
 
-function radiansToDegrees(number){
+function radiansToDegrees(number) {
     return number * (180 / Math.PI);
 }
 
@@ -322,7 +322,7 @@ console.log(radiansToDegrees(1));
 // spaces, newline characters, or tabs.
 
 // NEEDS HELP  ///
-function isBlank(input){
+function isBlank(input) {
     return input === " ";
 }
 
@@ -331,7 +331,7 @@ console.log(isBlank(" "))
 // - Make a function named `trim(string)` that removes empty spaces before and
 // after the input.
 
-function trim(string){
+function trim(string) {
     return string.trim();
 }
 
@@ -340,7 +340,7 @@ console.log(trim("  I like turtles!!   "));
 // - Make a function named `areEqual(input1, input2)` that returns if both inputs
 // have the same value
 
-function areEqual(input1, input2){
+function areEqual(input1, input2) {
     return input1 == input2;
 }
 
@@ -349,7 +349,7 @@ console.log(areEqual(6, "6"));
 // - Make a function named `areIdentical(input1, input2)` that returns if both
 //     inputs are same value and data type.
 
-function areIdentical(input1, input2){
+function areIdentical(input1, input2) {
     return input1 === input2;
 }
 
@@ -357,7 +357,7 @@ console.log(areIdentical(6, "6"));
 
 // - Make a function named `not(input)` returns the input with a flipped boolean
 
-function not(input){
+function not(input) {
     return input = !input;
 }
 
@@ -366,7 +366,7 @@ console.log(not(false));
 // - Make a function named `notNot(input)` that the negation of the negation of the
 // input.
 
-function notNot(input){
+function notNot(input) {
     return input = !!input;
 }
 
@@ -375,7 +375,7 @@ console.log(notNot(false));
 // - Make a function named `and(predicate1, predicate2)` that returns the logical
 // operation of AND
 
-function and(predicate1, predicate2){
+function and(predicate1, predicate2) {
     return predicate1 && predicate2;
 }
 
@@ -384,7 +384,7 @@ console.log(and("likes turtles", "hates turtles"))
 // - Make a function named `or(predicate1, predicate2)` that returns the logical
 // operation of OR
 
-function or(predicate1, predicate2){
+function or(predicate1, predicate2) {
     return predicate1 || predicate2;
 }
 
@@ -392,7 +392,7 @@ console.log(or("hates turtles", "likes turtles"));
 
 // - Write a function called `reverseString(string)` that reverses a string
 
-function reverseString(string){
+function reverseString(string) {
     return string.split(" ").reverse().join(" ");
 }
 
@@ -401,7 +401,7 @@ console.log(reverseString("i like turtles"));
 // - Make a function named `absoluteValue(number)` that returns the absolute value
 // of a number.
 
-function absoluteValue(number){
+function absoluteValue(number) {
     return Math.abs(number);
 }
 
@@ -411,7 +411,7 @@ console.log(absoluteValue(-873));
 // the number of sides the die should have. Generate a random number between 1 up
 // to and including the number of sides.
 
-function rollDice(sides){
+function rollDice(sides) {
     return Math.floor(Math.random() * sides);
 }
 
@@ -426,7 +426,7 @@ console.log(rollDice(6));
 //
 // Test this function with `console.log(returnTwo())`
 
-function returnTwo(){
+function returnTwo() {
     return 2;
 }
 
@@ -439,7 +439,7 @@ console.log((returnTwo()));
 //
 // Remember this function does not need a defined return value
 
-function sayHowdy(){
+function sayHowdy() {
     console.log("Howdy!");
 }
 
@@ -451,7 +451,7 @@ sayHowdy();
 // Test this function with `console.log(returnName())`
 //
 
-function returnName(){
+function returnName() {
     return "Andrew";
 }
 
@@ -461,7 +461,7 @@ console.log(returnName());
 //
 // Test this function with `console.log(addThree(5))`
 
-function addThree(number){
+function addThree(number) {
     return number + 3;
 }
 
@@ -473,7 +473,7 @@ console.log(addThree(5));
 // Test this function with `console.log(sayString('codeup'))`
 //
 
-function sayString(string){
+function sayString(string) {
     return string;
 }
 
@@ -485,7 +485,7 @@ console.log(sayString('codeup'));
 // - Write a function called `identity(input)` that takes in an argument called
 // input and returns that input.
 
-function identity(input){
+function identity(input) {
     return input;
 }
 
@@ -496,7 +496,7 @@ console.log(identity(7));
 // number between min and max values sent to that function call.
 //
 
-function getRandomNumber(min, max){
+function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min));
 }
 
@@ -506,7 +506,7 @@ console.log(getRandomNumber(0, 10));
 // provided string.
 //
 
-function first(input){
+function first(input) {
     return input.charAt(0);
 }
 
@@ -516,7 +516,7 @@ console.log(first("I like turtles"));
 // string
 //
 
-function last(input){
+function last(input) {
     return input.charAt(input.length - 1);
 }
 
@@ -526,7 +526,7 @@ console.log(last("I like turtles"));
 // character of a string.
 //
 
-function rest(input){
+function rest(input) {
     return input.substring(1);
 }
 
@@ -535,7 +535,7 @@ console.log(rest("Turtles"));
 // - Write a function called `reverse(input)` that takes a string and returns it
 // reversed.
 
-function reverse(input){
+function reverse(input) {
     return input.split(" ").reverse().join(" ");
 }
 
@@ -545,7 +545,7 @@ console.log(reverse("I like turtles"));
 // - Write a function called `isNumeric(input)` that takes an input and returns a
 // boolean if the input is numeric.
 
-function isNumeric(input){
+function isNumeric(input) {
     return !isNaN(input);
 }
 
@@ -555,7 +555,7 @@ console.log(isNumeric("a"));
 // - Write a function called `count(input)` that takes in a string and returns the
 // number of characters.
 
-function count(input){
+function count(input) {
     return input.length;
 }
 
@@ -564,7 +564,7 @@ console.log(count("Turtles"));
 //
 // - Write a function called `add(a, b)` that returns the sum of a and b
 
-function add(a, b){
+function add(a, b) {
     return a + b;
 }
 
@@ -573,7 +573,7 @@ console.log(add(7, 3))
 // - Write a function called `subtract(a, b)` that return the difference between
 // the two inputs.
 //
-function subtract(a, b){
+function subtract(a, b) {
     return a - b;
 }
 
@@ -666,19 +666,17 @@ console.log(multiply(2, 8));
 //
 // You have 12410 days, 1768 weeks, and 408 months left.
 
-function howMuchTimeLeft(age){
+function howMuchTimeLeft(age) {
     let yearsLeft = 90 - age;
     let daysLeft = yearsLeft * 365;
     let weeksLeft = yearsLeft * 52;
-    let monthsLeft = yearsLeft *12;
+    let monthsLeft = yearsLeft * 12;
     console.log('You have ' + daysLeft + ' days, ' + weeksLeft + ' weeks, and ' + monthsLeft + ' months left.')
 }
 
 howMuchTimeLeft(34);
 
 //The first parameter should be the weight and the second should be the height.
-
-
 
 
 /* If my weight is 65Kg and my height is 1.8m, I should be able to call your function like this:
@@ -690,15 +688,13 @@ bmi should equal 20 when it's rounded to the nearest whole number.
 */
 
 
-function bmiCalculator(weight, height){
+function bmiCalculator(weight, height) {
     let bmi = Math.round(weight / (height * height));
-    if (bmi < 18.5){
+    if (bmi < 18.5) {
         return 'Your BMI is ' + bmi + ', so you are underweight.'
-    }
-    else if(bmi > 24.9){
+    } else if (bmi > 24.9) {
         return 'Your BMI is ' + bmi + ', so you are overweight.'
-    }
-    else{
+    } else {
         return 'Your BMI is ' + bmi + ', so you have a normal weight.'
     }
 }
@@ -715,12 +711,53 @@ console.log(bmiCalculator(99.8, 1.88));
 //
 // unless that year is also evenly divisible by 400.
 
-function isLeap(year){
-    if(year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0){
+function isLeap(year) {
+    if (year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0) {
         return 'Leap year.'
-    } else{
+    } else {
         return 'Not leap year.'
     }
 }
 
 console.log(isLeap(2024))
+
+// write a function which will select a random name from a list of names. The person selected will have to pay for everybody's food bill.
+
+
+let names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"]
+
+function whosPaying(names) {
+    let randomNum = Math.floor(Math.random() * names.length);
+    return names[randomNum] + ' is going to buy lunch today!';
+}
+
+console.log(whosPaying(names))
+
+// function beer(){
+//     let beer = 99;
+//     while(beer > 0){
+//         console.log(beer + ' bottles of beer on the wall, ' + beer + ' bottles of beer. Take 1 down, pass it around, ' + (beer -= 1) + " bottles of beer on the wall.")
+//     }
+// }
+//
+// beer();
+
+//fibonacci sequence
+
+function fibonacciGenerator(n) {
+    let fibArray = [];
+    if (n === 1) {
+        fibArray.push(0)
+    } else if (n === 2) {
+        fibArray.push(0, 1)
+    } else {
+        fibArray.push(0, 1)
+        for (let i = 0; i < n - 2; i++) {
+            let nextNum = fibArray[fibArray.length - 1] + fibArray[fibArray.length - 2];
+            fibArray.push(nextNum)
+        }
+    }
+    return fibArray;
+}
+
+console.log(fibonacciGenerator(26))
